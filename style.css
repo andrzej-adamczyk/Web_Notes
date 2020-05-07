@@ -55,6 +55,7 @@ h3 {
 
 .links-style a {
   color: yellow;
+  font-weight: bold;
 }
 
 /* ↓"Rzeczy których się nauczyłem"↓	 */
@@ -69,13 +70,19 @@ h3 {
 
 .article1 a {
   color: yellow;
+  font-weight: bold;
 }
 
 /* ↓Image↓	*/
 
-.image-style {
+.image-large {
   height: 400px;
   width: 600px;
+}
+
+.image-small {
+  height: 16px;
+  width: 16px;
 }
 
 /* ↓Achievements↓	 */
@@ -90,6 +97,7 @@ h3 {
 
 .article2 a {
   color: yellow;
+  font-weight: bold;
 }
 
 /* ↓ Stopka	↓	 */
