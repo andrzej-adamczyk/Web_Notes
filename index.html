@@ -553,31 +553,253 @@ git push -u origin master
 
  </ul>
 
+ <h3>Display:</h3>
+
+ <ul>
+<li> block - domyślny styl przeglądarki dla div, main, section, p, article</li>
+
+<li> inline ( With 'display: inline', the width, height, margin-top, margin-bottom, and float properties have no effect.) - default for a and span </li>
+<li>  inline-block</li>
+<li>  rgba(255, 255, 0, 0.2); - ostatnia wartość odpowiada za przezroczystość </li>
+
+ </ul>
+
         </article>
 
 
                     <article class="article2">
 
 
-          <h3>Achievements</h3>
+          <h3>Size</h3>
 
            <ul>                       
                             <li>
-                               
+                              <strong> width/height </strong>- zdefiniowane "na sztywno"
                             </li>
 
                             <li>
-                               
+                                <strong>max-width/min-width</strong> - skalowalne (zależne od contentu)
+                              
                             </li>
 
 
                             <li>
+                                 <strong>max-height/min-height</strong> - rzadko używane
+                            </li>
+
+                                   <li> overflow
+                                        <ul>
+
+
+<li>   <strong>overflow:hidden</strong>- odcinanie treści wystającej</li>
+<li>   <strong>overflow:visible</strong>- domyślna wartość (wyświetlanie treści wystającej)</li>
+<li>   <strong>overflow:auto</strong> - dodanie scroll w elemencie, w którym nie mieści się treść</li>
+                               
+                              
+
+                                        </ul>
+                            </li>
+
+                            <li>
+                               600px - piksele
+                            </li>
+
+
+                            <li>
+                                50% - procenty w stosunku do rodzica (ekranu albo boxa, w którym znajduje się element)
+stylujemy raczej w poziomie niż w pionie
+
+                            </li>
+
+                                 <li>
+                                100vw - viewport width - procentowa szerokość całego okna, a nie rodzica (używany do stałych rzeczy)
+                            </li>
+
+
+                             <li>
+                                50vh - viewport height - procentowa wysokość całego okna
+                            </li>
+
+
+                        </ul>
+
+    </article>
+
+                    <article class="article2">
+
+
+          <h3>Box Model</h3>
+
+           <ul>                   
+
+           
+                            <li><strong>  padding: </strong>
+
+                            <ul>
+                              
+
+                                <li>
+                            
+                padding-top: 20px;
+                <br>
+                padding-right: 30px;       
+                     <br>                                                       
+                padding-bottom: 20px;
+                     <br>
+                padding-left: 30px; 
+               
                                 
+                                </li>
+
+                               <li> padding: 20px 30px 20px 30px; </li>
+
+                               <li> padding: 20px 30px; - top(bottom), right(left) </li>
+
+                               <li> padding 10px; (top,right,bottom,left) </li>
+
+                              </ul>
+                            </li>    
+
+
+
+                            <li>     <strong> border </strong> </li>
+                        <ul>
+
+  <li>
+                               border-width:3px;
+                               <br>
+                               border-style:solid;
+                               <br>
+                               border-color:#fe201a;
+</li>
+                               <li>border: 3px solid(dashed/dotted)) #fe201a; </li>
+
+                             <li>  border-top: 
+                             <br>
+                               border-right:
+                               <br>
+                               border-bottom:
+                               <br>
+                               border-left:
+</li>
+                            <li>   border-radius:50px; - zaokrąglanie rogów</li>
+
+                            <li>   border-radius: 50% - okrąg </li>
+
+
                             </li>
 
                         </ul>
 
 
+                            <li>
+                                <strong>margin</strong>
+                    <ul>
+                
+ <li> definiowany tak jak padding, ale na zewnątrz </li>
+
+                <li>margin: 10px auto - środowkanie tylko gdy width jest zdefiniowany  </li>
+
+                <li> nie działa dla <strong>display:inline</strong> - tylko dla <strong>display:block</strong>  oraz <strong>display:inline-block</strong>  </li>
+
+</ul>
+
+                            </li>
+                                 <li> <strong>box sizing</strong></li>
+ 
+                            <ul>
+
+                                    <li>wpływa na liczenie widtha </li>
+                                       <li>width border-box (wartość brutto) < width content-box (wartość netto) </li> 
+                            
+                            
+
+                            </ul>                   
+
+
+
+                        </ul>
+</article>
+
+                    <article class="article2">
+
+
+</article>
+
+
+
+                    <article class="article2">
+
+
+          <h3>Position</h3>
+
+           <ul>                       
+                            <li>position:static - pozycja zgodna z html (default) </li>
+                            <li>position: relative - pozycja względem krawędzi tego elementu</li>
+
+                            <li>  position:absolute - pozycja stała (nawet w przypadku skrolowania)
+                              <ul>
+                              
+                              <li>top: 20px; - 20 pikseli od góry</li>
+
+                             <li> z-index - kolejność: element z wyższym wskaźnikiem z-index jest widoczny</li>
+
+                             </ul>
+
+                            <li>  position:fixed - jak absolute ale przypięty do pewnego rozmiaru - można użyć do nagłówka - pływające rzeczy</li>
+
+                            <li>  position:sticky - do wyświetlania nagłówków</li>
+                    
+                        
+
+
+
+
+                        </ul>
+</article>
+
+
+
+                    <article class="article2">
+
+
+          <h3>Float</h3>
+
+           <ul>                       
+                            <li>
+                              float - używany do opływania tekstu, nie służy do budowania layoutów
+                              można wykorzystywać do zdjęcia
+
+                              clear:both - rozszerzenie boxa do wysokości elementu ze znacznikiem float
+                            </li>
+
+
+
+
+                        </ul>
+</article>
+
+
+                    <article class="article2">
+
+
+          <h3>JS - typy danych</h3>
+
+           <ul>                       
+                            <li>
+                             
+                             const - statyczne
+                             let - dynamiczne
+
+                             var - 
+
+                            </li>
+
+
+
+
+                        </ul>
+</article>
 
 
 
