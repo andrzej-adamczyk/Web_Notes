@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WTF Adept</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <base target="_blank">
 
 </head>
 
@@ -14,11 +15,11 @@
     <header>
       <nav>
 
-      <ul class="nav">
-               <li>  <a href ="index.html" class="green-link" > Strona główna </a> </li> 
-               <li>   <a href ="linki.html" class="green-link" > Linki </a> </li>          
+      <ul class="navigation">
+                 <a class="navigation__link navigation__link--homepage" href ="index.html" target="_self"> Strona główna </a> 
+                 <a class="navigation__link" href ="linki.html" class="green-link" target="_self"> Linki </a>         
                
-              <li>   <a href ="https://www.facebook.com/4Eyed" class="green-link" target="blank_" > Mój FB </a> </li>
+              <a class="navigation__link" href ="https://www.facebook.com/4Eyed" class="green-link" > Mój FB </a> 
             </ul>  
 
             </nav>
@@ -56,14 +57,14 @@
 
                      <h2>Tydzień 1</h2>    
     
-            <article class="article1">
+            <article class="lesson">
 
 
           <h3>VSC shortcuts </h3>
           
          
 								
-                        <ul > 
+                        <ul lesson__list> 
                             <li>
                                ! oraz enter - stworzenie szkieletu kodu html
                             </li>
@@ -81,23 +82,28 @@
         </article>
 
 
-                    <article class="article2">
+                    <article class="achievements">
 
 
           <h3>Achievements</h3>
 
-           <ul>                       
-                            <li>
-                                Zmiana ikonek na<a href = "E:\AA\WTF\Tydzień_1\Freestyle_webpage\index.html" target = "_blank"> mojej stronie </a> używając <a href=http://demo.amitjakhu.com/dripicons/ target="blank_"> dripicons</a>
-                            </li>
-
-                            <li>
-                                Zlinkowanie maila, telefonu i adresu na <a href = "E:\AA\WTF\Tydzień_1\Freestyle_webpage\index.html"> mojej stronie </a>
+           <ul class= "achievements__list">                       
+                        
+    <li >
+                                Zmiana ikonek na<a class="achievements__list--link" href = "http://127.0.0.1:8887/Tydzie%C5%84_1/Freestyle_webpage/index.html" > mojej stronie </a> używając <a href=http://demo.amitjakhu.com/dripicons/ > dripicons</a>
                             </li>
 
 
+
+
+
                             <li>
-                                Dodanie ikonki strony na pasku przeglądarki <a href = "E:\AA\WTF\Tydzień_1\Freestyle_webpage\index.html"> <img class="image-small" src="./images/favicon-32x32.png"> </a>
+                                Zlinkowanie maila, telefonu i adresu na <a href = "http://127.0.0.1:8887/Tydzie%C5%84_1/Freestyle_webpage/index.html" > mojej stronie </a>
+                            </li>
+
+
+                            <li>
+                                Dodanie ikonki strony na pasku przeglądarki <a href = "http://127.0.0.1:8887/Tydzie%C5%84_1/Freestyle_webpage/index.html" > <img class="image-small" src="./images/favicon-32x32.png"> </a>
                                
 
                               
@@ -126,15 +132,15 @@
 
 
 
-        <article class="article1">
+        <article class="lesson">
 
-        <h3>Nowe rzeczy, których się nauczyłem: </h3>
+        <h3>VSC shortcuts II </h3>
 
         
                         <ul>
                         
                             <li>
-                               <a class="green-link" href=https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe target="blank_">  Istnienie wtyczki Ignore X-Frame-Options Header </a>
+                               <a class="green-link" href=https://chrome.google.com/webstore/detail/ignore-x-frame-headers/gleekbfjekiniecknbkamfmkohkpodhe >  Istnienie wtyczki Ignore X-Frame-Options Header </a>
                             </li>
                       
 						
@@ -167,14 +173,14 @@
 
                      
                             <li>
-                                & gt - > 
+                                & gt - znak większy niż ">" 
                                
                             </li>
                      
 
   
                             <li>
-                                 & lt - &lt
+                                 & lt - znak mniejszy niż "<"
                                
                             </li>
                         </ul>
@@ -183,12 +189,12 @@
         </article>
     
 
-        <article class="article2">
+        <article class="achievements">
 
           <h3>Achievements</h3>
 
 
-                        <ul>
+                        <ul class= "achievements__list">
                                                      <li>
                             "Dobranie się" do linku z niepublicznym filmem na Vimeo
                             </li>
@@ -210,17 +216,17 @@
 
 							
 							 <li>
-                                <a href = https://www.w3schools.com/css/css3_images.asp target="blank_" class="green-link"> Użycie "Image Hover Overlay - Fade in a box" </a>
+                                <a class="achievements__list--link" href = https://www.w3schools.com/css/css3_images.asp  > Użycie "Image Hover Overlay - Fade in a box" </a>
                             </li>
 
                             	 <li>
-                                <a href = https://www.w3schools.com/jsref/jsref_getcomputedstyle.asp  target="blank_" class="green-link"> Użycie "JavaScript Window getComputedStyle()" </a>
+                                <a class="achievements__list--link" href = https://www.w3schools.com/jsref/jsref_getcomputedstyle.asp   > Użycie "JavaScript Window getComputedStyle()" </a>
                             </li>
 
 
 
  	                        <li>
-                                <a href = https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp  target="blank_" class="green-link"> Użycie "Style backgroundColor Property" </a>
+                                <a class="achievements__list--link" href = https://www.w3schools.com/jsref/prop_style_backgroundcolor.asp   > Użycie "Style backgroundColor Property" </a>
                             </li>
 
 
@@ -243,16 +249,16 @@
 
             <h2>Tydzień 3</h2>
 
-              <article class="article1">
+              <article class="lesson">
 
 
-          <h3>Nowe rzeczy, których się nauczyłem: </h3>
+          <h3>Kanban/HTML/Nazewnictwo</h3>
           
          
 								
-                        <ol>
+                        <ul>
                             <li>
-                              Metodologia KANBAN
+                              Metodologia KANBAN z użyciem Trello
                             </li>
                         <li> HTML II </li>
 
@@ -293,28 +299,34 @@
 <ul>
   
                                     <li>
-                                 <strong>camelCase</strong>
+                                 <strong>camelCase (ma zastosowanie do nazw zmiennych w JS)</strong>
                                  </li>
 
   
                                     <li>
-                                   <strong>kebab-case (ma zastosowanie do nazw klas)</strong>
+                                   <strong>kebab-case (ma zastosowanie do nazw klas w CSS)</strong>
                                  </li>
 
   
                                     <li>
-                                 snake_case
+                                 snake_case - rzadko używane
                                  </li>
 
                                       <li>
-                                 PascalCase
+                                 PascalCase - rzadko używane
                                  </li>
 
 </ul>
 
-                                
+</article>
+
+               
+              <article class="lesson">
+
+
+          <h3>CSS II </h3>                 
                                  </li>
-<li> CSS II </li>
+
 
 <ul>
 
@@ -336,7 +348,7 @@ nav a {
 
 <li> specyficzność w CSS - hierarchia (zła praktyka) <br>
 
-<ol type = "I">
+<ol type = "1">
 
 <li>!important </li>
 <li> style="" </li>
@@ -348,13 +360,20 @@ nav a {
 
 </li>
 
+
+
 <li>W przypadku "remisu" (równej liczby punktów za poszczególne ustawienia styli) brany pod uwage jest styl, który jest zdefiniowany niżej w pliku .css (bliżej elementu) </li>
 
 
 
 </ul>
 
-<li> <a href ="https://edu.devstyle.pl/frontend-edycja-2/tydzien-iii/lekcja-03-06-jak-dziala-internet-i-przegladarka/" target="_blank" class="green-link"> Lekcja 03.06 Jak działa Internet i przeglądarka</a> </li>
+</article>
+
+
+<article class="lesson">
+
+   <h3><a href ="https://edu.devstyle.pl/frontend-edycja-2/tydzien-iii/lekcja-03-06-jak-dziala-internet-i-przegladarka/" class="green-link"> Lekcja 03.06 Jak działa Internet i przeglądarka</a>  </h3>  
 
 
 
@@ -404,7 +423,14 @@ nav a {
 
 </ul>
 
-<li> Java Script</li>
+</article>
+
+
+<article class="lesson">
+
+<h3> Java Script </h3>
+
+
 
 <ul>
 
@@ -416,17 +442,16 @@ nav a {
 
 <li> Literały</li>
 
-<li>Funkcje np.<br> alert('Hello') <br> console.log('Hi') </li>
+<li>Funkcje np.: alert('Hello') , console.log('Hi') </li>
 
 <li> Obiekty</li>
 
 
 
-</ul>
 
 <li> Terminal</li>
 
-<ul>
+
 
 
 </ul>
@@ -442,17 +467,17 @@ nav a {
         </article>
 
 
-                    <article class="article2">
+                    <article class="achievements">
 
 
           <h3>Achievements</h3>
 
-           <ul>                       
+           <ul class= "achievements__list">                       
                             <li>
                                Nadpisanie user agent stylesheet
                             </li>
 
-                            <li> <a href="https://csswizardry.com/2011/01/create-a-centred-horizontal-navigation/">Stworzenie wysrodkowanej nawigacji </a>
+                            <li> <a class="achievements__list--link" href="https://csswizardry.com/2011/01/create-a-centred-horizontal-navigation/">Stworzenie wyśrodkowanej nawigacji </a>
                                
                             </li>
 
@@ -472,7 +497,7 @@ nav a {
 
             <h2>Tydzień 4</h2>
 
-              <article class="article1">
+              <article class="lesson">
 
 
           <h3>GIT </h3>
@@ -533,6 +558,10 @@ nav a {
 
                         </ul>
 
+                        </article>
+
+                           <article class="lesson">
+
             <h3>gitHub </h3>
 
                
@@ -553,6 +582,10 @@ git push -u origin master
 
  </ul>
 
+ </article>
+
+ <article class="lesson">
+
  <h3>Display:</h3>
 
  <ul>
@@ -567,12 +600,12 @@ git push -u origin master
         </article>
 
 
-                    <article class="article2">
+                    <article class="lesson">
 
 
           <h3>Size</h3>
 
-           <ul>                       
+           <ul class= "lesson__list">                       
                             <li>
                               <strong> width/height </strong>- zdefiniowane "na sztywno"
                             </li>
@@ -625,13 +658,14 @@ stylujemy raczej w poziomie niż w pionie
 
     </article>
 
-                    <article class="article2">
+                    <article class="lesson">
 
 
           <h3>Box Model</h3>
 
            <ul>                   
 
+                          
            
                             <li><strong>  padding: </strong>
 
@@ -716,28 +750,29 @@ stylujemy raczej w poziomie niż w pionie
 
                             </ul>                   
 
-
+ <li><a href="/sources/box/box.html" class="green-link">Przykład użycia wyżej wymienionych właściwości</a></li>  
 
                         </ul>
 </article>
 
-                    <article class="article2">
+                    <article class="achievements">
 
 
 </article>
 
 
 
-                    <article class="article2">
+                    <article class="lesson">
 
 
           <h3>Position</h3>
 
-           <ul>                       
-                            <li>position:static - pozycja zgodna z html (default) </li>
-                            <li>position: relative - pozycja względem krawędzi tego elementu</li>
+           <ul>              
+                
+                            <li><strong>position:static </strong> - pozycja zgodna z html (default) </li>
+                            <li><strong>position:relative </strong>  - pozycja względem krawędzi tego elementu</li>
 
-                            <li>  position:absolute - pozycja stała (nawet w przypadku skrolowania)
+                            <li><strong>position:absolute </strong>  - pozycja przypięta i przesuwająca się do scrolla</li>
                               <ul>
                               
                               <li>top: 20px; - 20 pikseli od góry</li>
@@ -746,60 +781,196 @@ stylujemy raczej w poziomie niż w pionie
 
                              </ul>
 
-                            <li>  position:fixed - jak absolute ale przypięty do pewnego rozmiaru - można użyć do nagłówka - pływające rzeczy</li>
+                            <li>  <strong>position:fixed </strong>  - podobne do absolute ale przypięty do pewnego rozmiaru i nie podążający za scrollem - można użyć do menu oraz pływające rzeczy</li>
 
-                            <li>  position:sticky - do wyświetlania nagłówków</li>
-                    
-                        
-
-
-
-
-                        </ul>
-</article>
-
-
-
-                    <article class="article2">
+                            <li>  <strong>position:sticky </strong> -  nie może mieć overflow </li>
+                                <ul>
+<li>tak jak fixed, ale wartość width jest równa całej dostępnej przestrzeni </li>
+<li>jego element parent nie może mieć overflow</li>
+<li>przesuwa się razem ze scrollem do momentu, gdy dotrzemy do końca elementu parent </li>
+</ul>
+   <li>
+                              float 
+                              <ul>
 
 
-          <h3>Float</h3>
+ <li><strong>nie służy do budowania layoutów! </strong> </li>
+ <li>można wykorzystywać go do stylowania zdjęcia (tak, żeby opływał je tekst)</li>                         
+                         
 
-           <ul>                       
-                            <li>
-                              float - używany do opływania tekstu, nie służy do budowania layoutów
-                              można wykorzystywać do zdjęcia
+<li>  clear:both or clear:right  or clear:left - rozszerzenie boxa do wysokości elementu ze znacznikiem float (gdy parent nie ma zdefiniowanej wartości width)</li>
+                              </ul>
 
-                              clear:both - rozszerzenie boxa do wysokości elementu ze znacznikiem float
+                              
+
+                            
                             </li>
 
+                                </ul>
+                        
 
+ <li><a href="/sources/position/position.html" class="green-link" >Przykład użycia wyżej wymienionych właściwości</a></li>   
 
 
                         </ul>
 </article>
 
 
-                    <article class="article2">
+
+
+
+                    <article class="lesson">
 
 
           <h3>JS - typy danych</h3>
 
            <ul>                       
-                            <li>
+                            <li> Zmienne
+                             <ul>
+                            <li> const - zmienne statyczne   </li> 
+                              <li>  let - zmienne dynamiczne (ale definiowane tylko jednokrotnie)   </li> 
+                              <li>  var -   </li> 
+</ul>
+
+</li>
+
+ <li>
                              
-                             const - statyczne
-                             let - dynamiczne
+                            Typy proste 
+                           <ul>
+<li> string - 'tekst'</li>
+<li> number - liczba</li>
+<li> bigint - duza liczba</li>
+<li> boolean - true or false</li>
+<li> null - wartość celowo niezdefiniowana</li>                            
+<li> undefined - brak definicji</li>     
+<li> *symbol - tworzy "unikalne opakowania" (rzadko używane)</li>    
 
-                             var - 
+</li>
+                            </ul>
 
+
+                           
+</li>
+
+
+<li> Funkcja: typeof(zmienna) - wskazuje na typ zmiennej </li>
+<li> Zasada <strong>immutability (niezmienność)</strong> - nie możemy zmieniać wartości primitive values, a jedynie połączenia między nimi a zmiennymi</li>
+
+
+</article>
+
+
+                    <article class="lesson">
+
+
+          <h3>Rozszerzenia w VSC</h3>
+
+           <ul>                       
+                            <li>
+                                <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" class="green-link" >Prettier - formatowanie kodu </a>
                             </li>
+
+                            
+                            <li>
+                                <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" class="green-link" >Live Server - odświeżanie strony</a>
+                            </li>
+                     
+
+
+                        </ul>
+
+      </article>
+
+
+     <article class="lesson">
+
+
+          <h3>BEM - Block Element Modifier</h3>
+
+           <ul>                       
+                            <li>Struktura
+                               <ul>
+
+                               <li>.hand</li>
+
+                                 <li>hand__finger</li>
+
+                                   <li>hand__finger--thumb</li>
+                               
+                               </ul>
+                            </li>
+
+                            
+                            <li>
+                                Block - nadrzędny element ograniczający treść
+                            </li>
+
+                                  
+                            <li>
+                                Element - część bloku (niekoniecznie bezpośrednie dziecko)
+                            </li>
+                     
+                         <li>
+                                Modifier - dodatkowa klasa odwzorowująca wariacje elementu
+                            </li>
+
+
+                        </ul>
+ 
+
+
+                      
+</article>
+
+
+
+                    <article class="achievements">
+
+
+          <h3>Achievements</h3>
+
+           <ul class="achievements__list">                       
+                            <li>
+                                Wykorzystanie <strong>position:fixed</strong> do zakotwiczenia menu na mojej stronie
+                            </li>
+
+                            
+                            <li>
+                                Wykorzystanie <strong>position:sticky</strong> do przesuwania elementów h3 wraz ze scrollowaniem na mojej stronie
+                            </li>
+
+
+                            <li>
+                               Wykorzystanie właściwości <strong>margin </strong> do oddzielenia menu od nagłówka 
+                            </li>
+
+                                            <li>
+                               Wykorzystanie <strong>BEM </strong> do wyśrodkowania menu oraz artykułów. 
+                            </li>
+
+                                    <li>
+                               Wykorzystanie właściwości <strong>text-decoration: none </strong> do usunięcia podkreśleń z linków w menu
+                            </li>    
+
+
+                                    <li>
+                              Naprawienie błędu <strong>Not allowed to load local resource: file:///E:/AA/WTF/Tydzie%C5%84_1/Freestyle_webpage/index.html </strong> przy użyciu <a href = "https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb/related" >  Web Server for Chrome</a>
+                            </li>    
+
+
+
+                                    <li>
+                              Użycie < base target="_blank" > w <strong>head</strong>, aby wyświetlać odnośniki w nowej karcie "by default" i < target="_self" > w pozostałych przypadkach
+                            </li>    
+
 
 
 
 
                         </ul>
-</article>
+
+        </article>
 
 
 
@@ -809,7 +980,7 @@ stylujemy raczej w poziomie niż w pionie
 
             <h2>Tydzień 5</h2>
 
-              <article class="article1">
+              <article class="lesson">
 
 
           <h3>Nowe rzeczy, których się nauczyłem: </h3>
@@ -834,7 +1005,7 @@ stylujemy raczej w poziomie niż w pionie
         </article>
 
 
-                    <article class="article2">
+                    <article class="achievements">
 
 
           <h3>Achievements</h3>
@@ -890,7 +1061,7 @@ stylujemy raczej w poziomie niż w pionie
         </article>
 
 
-                    <article class="article2">
+                    <article class="achievements">
 
 
           <h3>Achievements</h3>
@@ -947,7 +1118,7 @@ stylujemy raczej w poziomie niż w pionie
         </article>
 
 
-                    <article class="article2">
+                    <article class="achievements">
 
 
           <h3>Achievements</h3>
@@ -1001,7 +1172,7 @@ stylujemy raczej w poziomie niż w pionie
         </article>
 
 
-                    <article class="article2">
+                    <article class="achievements">
 
 
           <h3>Achievements</h3>
@@ -1057,7 +1228,7 @@ stylujemy raczej w poziomie niż w pionie
         </article>
 
 
-                    <article class="article2">
+                    <article class="achievements">
 
 
           <h3>Achievements</h3>
@@ -1112,7 +1283,7 @@ stylujemy raczej w poziomie niż w pionie
         </article>
 
 
-                    <article class="article2">
+                    <article class="achievements">
 
 
           <h3>Achievements</h3>
@@ -1167,7 +1338,7 @@ stylujemy raczej w poziomie niż w pionie
         </article>
 
 
-                    <article class="article2">
+                    <article class="achievements">
 
 
           <h3>Achievements</h3>
@@ -1222,7 +1393,7 @@ stylujemy raczej w poziomie niż w pionie
         </article>
 
 
-                    <article class="article2">
+                    <article class="achievements">
 
 
           <h3>Achievements</h3>
@@ -1276,7 +1447,7 @@ stylujemy raczej w poziomie niż w pionie
         </article>
 
 
-                    <article class="article2">
+                    <article class="achievements">
 
 
           <h3>Achievements</h3>

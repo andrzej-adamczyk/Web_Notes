@@ -7,20 +7,28 @@ body {
 
 /* ↓ nawigacja↓	*/
 
-.nav {
+.navigation {
   list-style-type: none;
   text-align: center;
+  background-color: rgba(234, 233, 240, 0.3);
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  padding: 1px;
+  border-radius: 8px;
 }
 
-.nav li {
-  display: inline;
-}
-
-.nav a {
+.navigation__link {
   display: inline-block;
-  padding: 10px;
-  background-color: rgb(36, 152, 230);
+  margin-left: 10px;
   color: white;
+  background-color: rgba(234, 233, 240, 0.5);
+  font-size: x-large;
+  text-decoration: none;
+}
+
+.navigation__link--homepage {
+  font-weight: bold;
 }
 
 /* ↓ nagłówki ↓	 */
@@ -29,6 +37,10 @@ h1 {
   text-decoration: dotted;
   text-shadow: aqua;
   text-align: center;
+  position: relative;
+  top: 20px;
+  margin: 50px;
+  padding-top: 5px;
 }
 
 h2 {
@@ -38,8 +50,11 @@ h2 {
 }
 
 h3 {
-  background-color: #1f2041;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: whitesmoke;
   text-align: center;
+  position: sticky;
+  top: 10%;
 }
 
 /* ↓	linki.html ↓	*/
@@ -60,15 +75,15 @@ h3 {
 
 /* ↓"Rzeczy których się nauczyłem"↓	 */
 
-.article1 {
+.lesson {
   background-color: #9666e4;
 }
 
-.article1 li {
+.lesson__list {
   list-style-type: disc;
 }
 
-.article1 a {
+.lesson a {
   color: yellow;
   font-weight: bold;
 }
@@ -87,15 +102,15 @@ h3 {
 
 /* ↓Achievements↓	 */
 
-.article2 {
+.achievements {
   background-color: #347fc4;
 }
 
-.article2 li {
+.achievements__list {
   list-style-type: square;
 }
 
-.article2 a {
+.achievements__list a {
   color: yellow;
   font-weight: bold;
 }
@@ -106,6 +121,7 @@ footer {
   text-align: center;
   background-color: rgb(243, 243, 243);
   color: black;
+  position: sticky;
 }
 
 footer a {
