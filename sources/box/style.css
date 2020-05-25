@@ -1,0 +1,86 @@
+.container-small {
+  background: hotpink;
+  /* height: 50vh; */
+  color: white;
+  position: relative;
+  width: 50vw;
+  z-index: 100;
+}
+
+.display-block {
+  display: block;
+
+  padding: 100px;
+  border: 1px solid;
+  background-color: rgba(255, 255, 0, 0.2);
+}
+
+.display-inline-block {
+  display: inline-block;
+
+  width: 100vh;
+
+  border: 2px solid rgba(255, 0, 0, 0.3);
+  background-color: rgba(255, 0, 255, 0.2);
+}
+
+.display-inline {
+  display: inline;
+  padding: 2px;
+  border-radius: 1px dotted;
+  background-color: rgba(51, 199, 150, 0.1);
+}
+
+.box-content {
+  background-color: rgba(255, 0, 0, 0.1);
+  overflow: visible;
+  width: 5vw;
+  height: 5vh;
+  padding: 20px 30px 10px 100px;
+  margin: 5px 3px 10px;
+  box-sizing: border-content;
+
+  border: 10px dotted;
+}
+
+.box-border {
+  background-color: rgba(255, 0, 0, 0.1);
+  overflow: visible;
+  width: 50vw;
+  height: 10vh;
+  padding: 20px 30px 10px 100px;
+  margin: 5px 3px 10px;
+  box-sizing: border-box;
+
+  border: 10px dotted;
+}
+
+.box {
+  background-color: rgba(255, 255, 0, 0.2);
+  overflow: hidden;
+  width: 20px;
+  height: 20px;
+  padding: 150px 150px 150px 250px;
+  border: 10px red solid;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+}
+
+.float-left {
+  float: left;
+  background-color: white;
+  color: black;
+  height: 70px;
+}
+
+.float-right {
+  float: right;
+  background-color: white;
+  color: black;
+  height: 50px;
+}
+
+.clear {
+  clear: both;
+}
