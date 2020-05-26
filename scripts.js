@@ -7,5 +7,5 @@
 // const nav1 = document.querySelector('navigation--js');
 // console.log(nav1);
 
-const nav_ = document.querySelector('body')
+const nav_ = document.querySelector('h1')
 console.log(nav_)
