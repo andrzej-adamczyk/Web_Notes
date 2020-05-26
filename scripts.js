@@ -4,5 +4,8 @@
 
 // alert(`Witam, z tej strony ${imie} ${nazwisko}`);
 
-const body = document.querySelector('body');
-console.log(body);
+// const nav1 = document.querySelector('navigation--js');
+// console.log(nav1);
+
+const nav_ = document.getElementsByClassName('.navigation')
+console.log(nav_)
