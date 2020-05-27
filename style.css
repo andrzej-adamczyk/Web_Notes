@@ -122,7 +122,7 @@ h3 {
 }
 
 .homework__list {
-  list-style-type: square;
+  color: yellow;
 }
 
 .homework__list a {
