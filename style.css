@@ -57,6 +57,23 @@ h3 {
   top: 10%;
 }
 
+.paragraph-big {
+  background-color: rgba(234, 233, 240, 0.8);
+  color: #2d2241;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.paragraph-small {
+  background-color: rgba(234, 233, 240, 0.7);
+  color: #2d2241;
+  text-align: center;
+  top: 10%;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 /* ↓	linki.html ↓	*/
 
 .links-style {
