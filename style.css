@@ -115,6 +115,27 @@ h3 {
   font-weight: bold;
 }
 
+/* Homework	 */
+
+.homework {
+  background-color: #137a99;
+}
+
+.homework__list {
+  list-style-type: square;
+}
+
+.homework__list a {
+  color: yellow;
+  font-weight: bold;
+}
+
+/* class for JS  */
+
+.empty__element {
+  font-weight: 700;
+}
+
 /* ↓ Stopka	↓	 */
 
 footer {
