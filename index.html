@@ -734,6 +734,10 @@
               zmieniać wartości primitive values, a jedynie połączenia między
               nimi a zmiennymi
             </li>
+            <li>
+              przykładowe użycie zmiennej ze stringiem - console.log(`string
+              ${zmienna}`);
+            </li>
           </ul>
         </article>
 
@@ -940,6 +944,11 @@
               ile nie zastosujemy atrybutu <strong>inherit</strong> (np color:
               inherit;)
             </li>
+
+            <li>
+              Na stronie może być tylko jeden element &lt;h1&gt; , za to może
+              być kilka elementów &lt;header&gt;
+            </li>
           </ul>
         </article>
 
@@ -947,9 +956,84 @@
           <h3>JS:funkcje</h3>
 
           <ul>
-            <li></li>
+            <li>
+              <pre>
+function calculate(myNumber){
+return myNumber*7;
+}              </pre
+              >
 
-            <li></li>
+              <ul>
+                <li>function - deklaracja</li>
+
+                <li>myNumber - parametr</li>
+                <li>return - słowo kluczowe</li>
+                <li>myNumber*7 - wynik</li>
+              </ul>
+            </li>
+            <li>
+              gdy nie umieścimy w naszej funkcji słowa kluczowego 'return' -
+              wtedy funkcja zwraca <i>undefined</i>
+            </li>
+
+            <li>
+              funkcji używamy aby:
+
+              <ul>
+                <li>
+                  uniknąć zjawiska powtarzania się kodu (<strong>D</strong>on't
+                  <strong>R</strong>epeat <strong>Y</strong>ourself)
+                </li>
+                <li>zwiększyć czytelność kodu</li>
+                <li>
+                  łatwiej szukać błędów, jako że odpowiedzialność za wykonywanie
+                  zadań jest zgromadzona w jednym miejscu
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              (Fat) arrow functions
+
+              <ul>
+                <li>
+                  <pre>
+const calculate = (myNumber) => { 
+myNumber = myNumber + 3;
+console.log(myNumber);
+return myNumber*7; 
+} 
+calculate(2); //35</pre
+                  >
+                </li>
+                <li>
+                  <pre>
+const calculate = myNumber => (myNumber+3)*7; calculate(2);
+// 35
+                  </pre>
+                </li>
+              </ul>
+            </li>
+            <li>
+              Zalety (Fat) arrow functions
+
+              <ul>
+                <li>skraca zapis deklaracji funkcji</li>
+
+                <li>zwiększa czytelność</li>
+                <li>
+                  nie tworzy nowego kontekstu this, nie ma dostępu do arguments
+                  i super
+                </li>
+                <li>
+                  nie jest zamiennikiem "tradycyjnej" funkcji (ale w większości
+                  przypadków nie zobaczysz różnicy)
+                </li>
+              </ul>
+            </li>
+
+            <li class="empty__fillContent"></li>
+            <li class="empty__updateContent">test</li>
           </ul>
         </article>
 
@@ -987,7 +1071,20 @@
           <h3>Achievements</h3>
 
           <ul>
-            <li></li>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=UuxgC9HwWSw&feature=youtu.be"
+              >
+                Live</a
+              >
+            </li>
+
+            <li>
+              <a
+                href="https://www.lifewire.com/grouping-multiple-css-selectors-3467065"
+                >Grupowanie selektorów CSS</a
+              >
+            </li>
 
             <li></li>
 

@@ -5,6 +5,12 @@ body {
   background-image: url(https://res.cloudinary.com/ddjmcdgi3/image/upload/v1588539220/samples/milky-way-2695569_1920_s4qazw.jpg);
 }
 
+/* ustawienie dziedziczenia koloru linków  */
+
+a {
+  color: inherit;
+}
+
 /* ↓ nawigacja↓	*/
 
 .navigation {
@@ -149,7 +155,9 @@ h3 {
 
 /* class for JS  */
 
-.empty__element {
+.empty__element,
+.empty__updateContent,
+.empty__fillContent {
   font-weight: 700;
 }
 
