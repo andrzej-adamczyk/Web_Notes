@@ -155,10 +155,14 @@ h3 {
 
 /* class for JS  */
 
-.empty__element,
+.empty__element {
+  font-weight: 700;
+}
+
 .empty__updateContent,
 .empty__fillContent {
   font-weight: 700;
+  margin-left: 2vw;
 }
 
 /* ↓ Stopka	↓	 */
