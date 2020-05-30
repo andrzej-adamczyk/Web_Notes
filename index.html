@@ -1058,14 +1058,14 @@ const calculate = myNumber => (myNumber+3)*7; calculate(2);
 
             <li>
               Zmienne - (const/let) posiadają własności (property), które są
-              wypisywane alfabetycznie w Dev Tools
+              wypisywane w kolejności alfabetycznej w Dev Tools
             </li>
 
             <li>Funkcje posiadają metody</li>
 
-            <li>dot notation .</li>
+            <li>objectName.propertyName - dot notation</li>
 
-            <li>bracket notation []</li>
+            <li>objectName["propertyName"] - bracket notation</li>
           </ul>
         </article>
 
@@ -1073,9 +1073,51 @@ const calculate = myNumber => (myNumber+3)*7; calculate(2);
           <h3>JS:Immutability w obiektach</h3>
 
           <ul>
-            <li></li>
+            <li>
+              Nie możemy bezpośrednio zmieniać obiektów zdefiniowanych za pomocą
+              const, ale możemy modyfikować wartości kluczy zdefiniowanych w tym
+              obiekcie
 
-            <li></li>
+              <ul>
+                <li>
+                  Przy tworzeniu obiektu z innego obiektu oba obiekty mają te
+                  same połączenia do wartości, <br />
+                  więc modyfikując obiekt skopiowany zmieniamy też obiekt
+                  źródłowy (i odwrotnie)
+
+                  <p>np. const objectOne = const objectTwo</p>
+                </li>
+
+                <li>
+                  Przy tworzeniu nowego obiektu, który ma zdefiniowaną wartość
+                  klucza na podstawie istniejącego obiektu, <br />
+                  modyfikując wartość klucza w nowym obiekcie nie zmieniamy
+                  wartości klucza w obiekcie źródłowym const objectOne = const
+                  objectTwo
+                  <p>np. objectTwo.key = objectOne.key</p>
+                </li>
+
+                <li>
+                  Przy tworzeniu nowego obiektu, który ma zdefiniowaną wartość
+                  klucza zagnieżdżonego na podstawie wartości klucza
+                  zagnieżdżonego istniejącego obiektu, <br />
+                  modyfikując wartość klucza w nowym obiekcie zmieniamy wartości
+                  klucza zagnieżdżonego w obiekcie źródłowym (i odwrotnie)
+
+                  <p>np. objectTwo.nestedKey = objectOne.nestedKey</p>
+                </li>
+
+                <li>
+                  Przy tworzeniu nowego obiektu, który ma zdefiniowaną wartość
+                  klucza zagnieżdżonego na podstawie wartości klucza
+                  zagnieżdżonego istniejącego obiektu, <br />
+                  modyfikując wartość klucza w nowym obiekcie nie zmieniamy
+                  wartości klucza zagnieżdżonego w obiekcie źródłowym
+
+                  <p>np. objectTwo.nestedKey.key = objectOne.nestedKey.key</p>
+                </li>
+              </ul>
+            </li>
           </ul>
         </article>
 
@@ -1108,7 +1150,12 @@ const calculate = myNumber => (myNumber+3)*7; calculate(2);
               >
             </li>
 
-            <li></li>
+            <li>
+              <a
+                href="https://codeburst.io/javascript-quickie-dot-notation-vs-bracket-notation-333641c0f781"
+                >Dot notation vs bracket notation</a
+              >
+            </li>
 
             <li></li>
           </ul>

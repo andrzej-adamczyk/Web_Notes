@@ -107,14 +107,68 @@ showMyPopulation("population");
 
 console.log(deathStar["population"]);
 
-// . notation
+console.log(deathStar.population);
 
-const showMyPopulation1 = (myProperty) => {
-  console.log(
-    `Twoja własność to ${myProperty} a jej wartość to ${deathStar.myProperty}`
-  );
+console.log(deathStar.diameter);
+
+console.log(deathStar["diameter"]);
+
+// immutability w obiektach
+
+const humanOne = {
+  name: "Maciek",
+  age: 32,
+  address: {
+    street: "Mazowiecka",
+    city: "Lublin",
+  },
 };
 
-showMyPopulation1("population");
+const humanTwo = {
+  name: "Adam",
+  age: 32,
+  address: {
+    street: humanOne.address.street,
+    city: humanOne.address.city,
+  },
+};
 
-console.log(deathStar.population);
+console.log(humanTwo.age);
+
+humanOne.age = 31;
+
+humanTwo.age = 35;
+
+console.log(humanTwo);
+
+console.log(humanOne);
+
+const humanThree = humanOne;
+
+console.log(humanOne);
+
+console.log(humanThree);
+
+humanOne["age"] = 1200;
+console.log(humanOne);
+console.log(humanThree);
+
+const humanFour = {
+  name: "Steve",
+  age: humanOne.age,
+};
+
+console.log(humanFour);
+
+humanFour.age = 23;
+
+console.log(humanFour);
+console.log(humanOne);
+
+console.log(humanTwo);
+console.log(humanOne);
+
+humanOne.address.city = "Szczecin";
+
+console.log(humanTwo.address["city"]);
+console.log(humanOne["address"].city);
