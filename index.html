@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WTF Adept</title>
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
     <link rel="stylesheet" href="style.css" type="text/css" />
     <base target="_blank" />
   </head>
@@ -1276,7 +1277,53 @@ const calculate = myNumber => (myNumber+3)*7; calculate(2);
           <ul>
             <li>user agent stylesheet - domyślne style przeglądarki</li>
 
-            <li></li>
+            <li>
+              normalizacja przy użyciu
+              <a href="https://necolas.github.io/normalize.css/">
+                normalize.css</a
+              >
+              - ujednolica style na różnych przeglądarkach
+            </li>
+
+            <li>
+              dodatek do normalize.css
+              <pre>
+html {
+
+   box-sizing: border-box; 
+   
+}
+
+
+ *, *:before, *:after {
+
+    box-sizing: inherit; 
+              
+}
+              </pre>
+            </li>
+
+            <li>
+              reset <br />
+              <pre>
+   * {
+
+margin:0;
+padding: 0;
+outline: none; /* wylącza obramowanie przy wciśnięciu tabulatora*/
+font-weight: normal;
+
+}
+
+ul, ol {
+
+list-style: none;
+
+}
+
+        </pre
+              >
+            </li>
           </ul>
         </article>
 

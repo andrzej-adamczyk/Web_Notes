@@ -1,3 +1,17 @@
+html {
+
+  box-sizing: border-box; 
+  
+}
+
+
+*, *:before, *:after {
+
+   box-sizing: inherit; 
+             
+}
+
+
 body {
   text-align: left;
   background-color: #2d2241;
@@ -182,3 +196,17 @@ footer a {
   width: 50%;
   margin: 10px auto;
 }
+
+/* reset */
+/* 
+* {
+  margin: 0;
+  padding: 0;
+  outline: none; /* wylącza obramowanie przy wciśnięciu tabulatora*/
+  font-weight: normal;
+}
+
+ul,
+ol {
+  list-style: none;
+} */
