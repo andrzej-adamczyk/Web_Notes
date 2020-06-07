@@ -177,3 +177,8 @@ footer {
 footer a {
   color: #2d2241;
 }
+
+.table {
+  width: 50%;
+  margin: 10px auto;
+}
