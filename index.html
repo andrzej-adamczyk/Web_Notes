@@ -1440,13 +1440,70 @@ list-style: none;
           <h3>Tła</h3>
 
           <ul>
-            <li>background:</li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              background:
+              <ul>
+                <li>background-image: url('sciezka-do=pliku');</li>
+                <li>
+                  background-position: &lt;pozycja-y&gt; &lt;pozycja-x&gt;
+                  <ul>
+                    <li>top</li>
+                    <li>bottom</li>
+                    <li>center</li>
+                    <li>xx%</li>
+                    <li>xxpx</li>
+                  </ul>
+                </li>
+                <li>
+                  background-repeat:
+                  <ul>
+                    <li>repeat-x</li>
+                    <li>repeat-y</li>
+                    <li>no-repeat</li>
+                    <li>round</li>
+                    <li>space</li>
+                  </ul>
+                </li>
+                <li>
+                  background-attachment:
+                  <ul>
+                    <li>scroll</li>
+                    <li>fixed</li>
+                    <li>local</li>
+                  </ul>
+                </li>
+                <li>
+                  background-clip:
+                  <ul>
+                    <li>border-box</li>
+                    <li>padding-box</li>
+                    <li>content-box</li>
+                  </ul>
+                </li>
+                <li>background-color: <i>wartość koloru </i></li>
+                     <li>rgb(255,255,255,0.7) </i></li>
+                          <li>background-size: <ul>
+                            <li>auto</li>
+                            <li>cover</li>
+                            <li>contain</li>
+                            <li>&lt;width&gt; &lt;height&gt;</li>
+                          </ul></li>
+
+              </ul>
+            </li>
+            <li><a href="https://cssgradient.io/gradient-backgrounds/">gradienty</a></li>
+
+   <pre>
+background:
+url(sweettexture.jpg) /* image */
+top center / 200px 200px /* position / size */
+no-repeat /* repeat */
+fixed /* attachment */
+padding-box /* origin */
+content-box /* clip */
+red; /* color */
+
+<pre>
           </ul>
         </article>
 
