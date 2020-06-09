@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WTF Adept</title>
-    <link rel="stylesheet" href="normalize.css" type="text/css" />
-    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
     <base target="_blank" />
   </head>
 
-  <body>
+  <body class="page">
     <header>
       <nav class="navigation">
         <a
@@ -1457,41 +1457,43 @@ list-style: none;
                 <li>
                   background-repeat:
                   <ul>
-                    <li>repeat-x</li>
-                    <li>repeat-y</li>
-                    <li>no-repeat</li>
-                    <li>round</li>
-                    <li>space</li>
+<li>  <i>repeat</i> (domyślna wartość)</li>
+                    <li>repeat-x (powtarzane tylko po osi x)</li>
+                    <li>repeat-y (powtarzane tylko po osi y)</li>
+                    <li>no-repeat (obrazek pojawi się jedynie raz)</li>
+                    <li>round (otacza element, skalując tło nie przycinając obrazka)</li>
+                    <li>space (pozostawia przestrzeń między obrazkami)</li>
                   </ul>
                 </li>
                 <li>
                   background-attachment:
                   <ul>
-                    <li>scroll</li>
-                    <li>fixed</li>
+                    <li>scroll (domyślna wartość, tło przesuwa się wraz ze stroną)</li>
+                    <li>fixed (tło 'zakotwiczone' na konkretnej pozycji)</li>
                     <li>local</li>
                   </ul>
                 </li>
                 <li>
                   background-clip:
                   <ul>
-                    <li>border-box</li>
-                    <li>padding-box</li>
-                    <li>content-box</li>
+                    <li>border-box (domyślna wartość,ograniczenie tła do obramowania)</li>
+                    <li>padding-box (ograniczenie tła do przestrzeni zajętej przez padding )</li>
+                    <li>content-box (ograniczenie tła do zawartości naszego kontentu )</li>
                   </ul>
                 </li>
                 <li>background-color: <i>wartość koloru </i></li>
                      <li>rgb(255,255,255,0.7) </i></li>
                           <li>background-size: <ul>
-                            <li>auto</li>
-                            <li>cover</li>
-                            <li>contain</li>
+                            <li>auto (domyślna wartość)</li>
+                            <li>cover (obrazek wypełnia całą stronę, bez względu na content)</li>
+                            <li>contain (cały obrazek, bez względu na rozmiary przeglądarki)</li>
                             <li>&lt;width&gt; &lt;height&gt;</li>
                           </ul></li>
 
               </ul>
             </li>
             <li><a href="https://cssgradient.io/gradient-backgrounds/">gradienty</a></li>
+            <li>Skrócony zapis właściwości background:</li>
 
    <pre>
 background:
@@ -1533,7 +1535,7 @@ red; /* color */
               >
             </li>
 
-            <li></li>
+            <li>Stworzenie osobnego folderu dla plików css</li>
           </ul>
         </article>
       </section>

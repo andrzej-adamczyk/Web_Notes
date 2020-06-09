@@ -1,0 +1,32 @@
+.page {
+  /* background-image: url("http://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg"); */
+  background-image: url("https://www.cleverfiles.com/howto/wp-content/uploads/2018/03/minion.jpg");
+
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.local {
+  background-image: url("http://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg");
+  background-attachment: scroll;
+  /* height: 50px; */
+  overflow: scroll;
+  padding: 70px;
+  background-clip: border-box;
+}
+
+.rgba {
+  background: #fdc830; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f37335,
+    #fdc830
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f37335,
+    #fdc830
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

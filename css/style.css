@@ -1,22 +1,19 @@
 html {
-
-  box-sizing: border-box; 
-  
+  box-sizing: border-box;
 }
 
-
-*, *:before, *:after {
-
-   box-sizing: inherit; 
-             
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-
-body {
+.page {
   text-align: left;
   background-color: #2d2241;
   color: yellow;
   background-image: url(https://res.cloudinary.com/ddjmcdgi3/image/upload/v1588539220/samples/milky-way-2695569_1920_s4qazw.jpg);
+  background-position: center center;
 }
 
 /* ustawienie dziedziczenia koloru linków  */
@@ -199,12 +196,12 @@ footer a {
 
 /* reset */
 /* 
-* {
+. {
   margin: 0;
   padding: 0;
-  outline: none; /* wylącza obramowanie przy wciśnięciu tabulatora*/
-  font-weight: normal;
-}
+  outline: none; /* wylącza obramowanie przy wciśnięciu tabulatora*/ /*
+  font-weight: normal; 
+ } 
 
 ul,
 ol {
