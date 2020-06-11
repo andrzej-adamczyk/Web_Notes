@@ -172,3 +172,13 @@ humanOne.address.city = "Szczecin";
 
 console.log(humanTwo.address["city"]);
 console.log(humanOne["address"].city);
+
+// tydzien V
+
+if ("Java" != "JavaScript") {
+  console.log("Java to nie Java script");
+}
+
+if ("Java" != "Java") {
+  console.log("Java to nie Java script");
+}
