@@ -1667,7 +1667,7 @@ align-items:center; // oś y
           <h3>JS: Logika</h3>
 
           <ul>
-            <li>wyrażenie <i>if</i></li>
+            <li>wyrażenie <b>IF</b></li>
             <li>
               operatory:
 
@@ -1682,14 +1682,108 @@ align-items:center; // oś y
                 <li>!= = obie strony różne (sprawdza typeof)</li>
               </ul>
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              porównanie (2 == "2") zwróci true, ponieważ JS dokona konwersji
+            </li>
+            <li>
+              porównanie (2 == "2") zwróci true ponieważ funkcja typeof zwróci
+              różne typy danych
+            </li>
+            <li>
+              6 wartości, dla których instrukcja <b>if</b> NIE zostanie
+              wykonana:
+              <ul>
+                <li>false</li>
+                <li>0</li>
+                <li>
+                  pusty stringiem
+
+                  <ul>
+                    <li>''</li>
+                    <li>""</li>
+                    <li>``</li>
+                  </ul>
+                </li>
+                <li>null</li>
+                <li>undefined</li>
+                <li>NaN</li>
+              </ul>
+            </li>
+            <li> wartości, dla których instrukcja <b>if</b>  zostanie
+              wykonana:
+            
+            <ul>
+            
+            
+            <li>'Tekst'</li>
+            <li>12</li>
+            <li>-4</li>
+            <li>{}</li>
+            <li>[]</li>
+            <li>true</li>
+            <li>itd.</li>
+</li>
+</ul>
+
+<li>&& - AND - wszystkie warunki muszą być równe true</li>
+<li>|| - OR - conajmniej jeden warunek musi być równy true </li>
+<li>! - NOT - odwraca wartość wyrażenia logicznego</li>
+<li>wyrażenie <b>ELSE</b></li>
+<li>wyrażenie <b>ELSE IF</b>
+
+<pre>
+if (myVariable == 4) {
+// wykonaj kod jeśli true
+} else if (myVariable == 8) {
+// wykonaj kod jeśli myVariable == 8
+}
+else{ 
+// wykonaj kod jeśli myVariable != 4 && myVariable !=8
+}
+
+</pre>
+
+</li>
+
+<li>wyrażenie <b>SWITCH</b>
+<pre>
+switch (myVariable) {
+case 4:
+console.log('hi 4');
+break;
+case 8:
+console.log('hi 8');
+break;
+default:
+console.log('default response');
+}
+</pre>
+
+
+
+</li>
+
+<li>Zapis skrócony - <b>(zmienna1 > zmienna2) ? console.log('true') : console.log('false')</b></li>
+
+<li>W tym zapisie wynik tej operacji możemy przypisać do zmiannej <br> const result = (zmienna1 > zmienna2) ? {name:'Maciek'} : true</li>
+
+<li> <a href="https://www.destroyallsoftware.com/talks/wat"> Absurdy w języku Java Script </a>
+
+
+<ul>
+  <li>console.log([] + []); - pusty string</li>
+  <li>console.log([] + {}); - [object Object]</li>
+  <li>console.log({} + []); - 0</li>
+    <li>console.log({} + {}); - NaN</li>
+
+
+</ul>
+
+
+
+ </li>
+
+
           </ul>
         </article>
 
@@ -1697,7 +1791,12 @@ align-items:center; // oś y
           <h3>Achievements</h3>
 
           <ul>
-            <li></li>
+            <li>
+              <a
+                href="https://www.youtube.com/watch?v=qHiG_dGRMMw&feature=youtu.be"
+                >QA</a
+              >
+            </li>
 
             <li></li>
 

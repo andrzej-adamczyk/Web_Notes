@@ -182,3 +182,66 @@ if ("Java" != "JavaScript") {
 if ("Java" != "Java") {
   console.log("Java to nie Java script");
 }
+
+if (humanOne.age > humanThree.age) {
+  console.log("Człowiek 1 jest starszy niż człowiek 2");
+} else if ((humanOne.age = humanThree.age)) {
+  console.log("Człowiek 2 jest w tym samym wieku co człowiek 1");
+} else {
+  console.log("Człowiek 2 jest starszy niż człowiek 1");
+}
+
+if (!humanOne.age && 1) {
+  console.log(typeof []);
+}
+
+switch (humanOne.age) {
+  case 4:
+    console.log("4");
+    break;
+
+  case 1:
+    console.log("1");
+    break;
+
+  default:
+    console.log(`console.log.humanOne.age`);
+}
+
+const result = "Java" == "Java" ? { name: "Maciek" } : false;
+
+console.log(result);
+
+//WAT in Java Script
+
+console.log("Test JS");
+
+const value1 = [] + [];
+
+console.log("wynik operacji [] + [] to" + value1);
+
+console.log("typ danych wyniku[] + [] to " + typeof value1);
+
+const value2 = [] + {};
+
+console.log("wynik operacji [] + {} to " + value2);
+
+console.log("typ danych wyniku [] + {} to " + value2);
+
+const value3 = {} + [];
+
+console.log("wynik operacji {} + [] to " + value3);
+
+console.log("typ danych wyniku {} + [] to " + typeof value3);
+
+const value4 = {} + {};
+
+console.log("wynik operacji {} + {} to " + value4);
+
+console.log("typ danych wyniku {} + {} to " + typeof value4);
+
+// const arraySample = array(16);
+
+// console.log(arraySample);
+
+// console.log(typeof arraySample);
