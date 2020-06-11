@@ -1335,11 +1335,16 @@ list-style: none;
             <li>
               kierunek - <strong>flex-direction:</strong>
               <ul>
-                <li>row (domyślna wartość)</li>
+                <li>
+                  row (domyślna wartość) - ustawienie elementów w kolejności
+                  (horyzontalnie)
+                </li>
 
-                <li>column</li>
-                <li>row-reverse</li>
-                <li>column-reverse</li>
+                <li>
+                  column - ustawienie elementów w kolejności (wertykalnie)
+                </li>
+                <li>row-reverse - tak jak row tylko od prawej do lewej</li>
+                <li>column-reverse - tak jak column tylko od dołu do góry</li>
               </ul>
             </li>
             <li>
@@ -1366,12 +1371,19 @@ list-style: none;
                 <li>flex-start</li>
                 <li>flex-end</li>
                 <li>center</li>
-                <li>space-between</li>
-                <li>space-around</li>
+                <li>
+                  space-between - przestrzeń będzie dodana jedynie między
+                  elementami
+                </li>
+                <li>
+                  space-around - przestrzeń będzie także dodana po lewej oraz
+                  prawej stronie elementu początkowego oraz końcowego
+                </li>
               </ul>
             </li>
             <li>
               ustawianie elementów wzdłóż osi przeciwnej do flex-direction -
+              oddzielanie poszczególnych linii od siebie
               <strong>align-content</strong>
               <ul>
                 <li>stretch</li>
@@ -1394,7 +1406,8 @@ list-style: none;
               </ul>
             </li>
             <li>
-              ustawianie elementów wzdłóż osi przeciwnej do flex-direction -
+              ustawianie pojedynczego elementu wzdłóż osi przeciwnej do
+              flex-direction -
               <strong>align-self:</strong>
               <ul>
                 <li>stretch</li>
@@ -1405,7 +1418,8 @@ list-style: none;
               </ul>
             </li>
             <li>
-              kolejność (niższa liczba ma większy priorytet) -
+              kolejność (niższa liczba ma większy priorytet - można używać także
+              liczb ujemnych) -
               <strong>order:</strong>
             </li>
             <li>
@@ -1457,18 +1471,23 @@ list-style: none;
                 <li>
                   background-repeat:
                   <ul>
-<li>  <i>repeat</i> (domyślna wartość)</li>
+                    <li><i>repeat</i> (domyślna wartość)</li>
                     <li>repeat-x (powtarzane tylko po osi x)</li>
                     <li>repeat-y (powtarzane tylko po osi y)</li>
                     <li>no-repeat (obrazek pojawi się jedynie raz)</li>
-                    <li>round (otacza element, skalując tło nie przycinając obrazka)</li>
+                    <li>
+                      round (otacza element, skalując tło nie przycinając
+                      obrazka)
+                    </li>
                     <li>space (pozostawia przestrzeń między obrazkami)</li>
                   </ul>
                 </li>
                 <li>
                   background-attachment:
                   <ul>
-                    <li>scroll (domyślna wartość, tło przesuwa się wraz ze stroną)</li>
+                    <li>
+                      scroll (domyślna wartość, tło przesuwa się wraz ze stroną)
+                    </li>
                     <li>fixed (tło 'zakotwiczone' na konkretnej pozycji)</li>
                     <li>local</li>
                   </ul>
@@ -1476,78 +1495,117 @@ list-style: none;
                 <li>
                   background-clip:
                   <ul>
-                    <li>border-box (domyślna wartość,ograniczenie tła do obramowania)</li>
-                    <li>padding-box (ograniczenie tła do przestrzeni zajętej przez padding )</li>
-                    <li>content-box (ograniczenie tła do zawartości naszego kontentu )</li>
+                    <li>
+                      border-box (domyślna wartość,ograniczenie tła do
+                      obramowania)
+                    </li>
+                    <li>
+                      padding-box (ograniczenie tła do przestrzeni zajętej przez
+                      padding )
+                    </li>
+                    <li>
+                      content-box (ograniczenie tła do zawartości naszego
+                      kontentu )
+                    </li>
                   </ul>
                 </li>
                 <li>background-color: <i>wartość koloru </i></li>
-                     <li>rgb(255,255,255,0.7) </i></li>
-                          <li>background-size: <ul>
-                            <li>auto (domyślna wartość)</li>
-                            <li>cover (obrazek wypełnia całą stronę, bez względu na content)</li>
-                            <li>contain (cały obrazek, bez względu na rozmiary przeglądarki)</li>
-                            <li>&lt;width&gt; &lt;height&gt;</li>
-                          </ul></li>
-
+                <li>rgb(255,255,255,0.7)</li>
+                <li>
+                  background-size:
+                  <ul>
+                    <li>auto (domyślna wartość)</li>
+                    <li>
+                      cover (obrazek wypełnia całą stronę, bez względu na
+                      content)
+                    </li>
+                    <li>
+                      contain (cały obrazek, bez względu na rozmiary
+                      przeglądarki)
+                    </li>
+                    <li>&lt;width&gt; &lt;height&gt;</li>
+                  </ul>
+                </li>
               </ul>
             </li>
-            <li><a href="https://cssgradient.io/gradient-backgrounds/">gradienty</a></li>
+            <li>
+              <a href="https://cssgradient.io/gradient-backgrounds/"
+                >gradienty</a
+              >
+            </li>
             <li>Skrócony zapis właściwości background:</li>
-      </ul>
-   <pre>
-background:
-url(sweettexture.jpg) /* image */
-top center / 200px 200px /* position / size */
-no-repeat /* repeat */
-fixed /* attachment */
-padding-box /* origin */
-content-box /* clip */
-red; /* color */
-</pre> 
-           <p>
+          </ul>
+          <pre>
+      background:
+      url(sweettexture.jpg) /* image */
+      top center / 200px 200px /* position / size */
+      no-repeat /* repeat */
+      fixed /* attachment */
+      padding-box /* origin */
+      content-box /* clip */
+      red; /* color */
+</pre
+          >
+          <p>
             <a href="/sources/position/position.html"
               >Przykład użycia wyżej wymienionych właściwości</a
             >
           </p>
         </article>
 
-
         <article class="lesson">
+          <h3>Cięcie grafik</h3>
+          <ul>
+            <li>
+              git clone &lt;link do repozytorium&gt; - klonowanie istniejącego
+              repozytorium lokalnie
+            </li>
+            <li>font-style:italic</li>
+            <li>line-height:0px</li>
+            <li>text-decoration:none</li>
+            <li>
+              Nie warto kopiować kodu bezpośrednio z Figmy, gdyż nie jest on do
+              końca kompatybilny z przeglądarką
+            </li>
+          </ul>
+        </article>
 
-        <h3>Cięcie grafik</h3>
-  <ul>
-    <li>git clone &lt;link do repozytorium&gt; - klonowanie istniejącego repozytorium lokalnie </li>
-    <li>font-style:italic</li>
-    <li>line-height:0px</li>
-    <li>text-decoration:none</li>
-    <li>Nie warto kopiować kodu bezpośrednio z Figmy, gdyż nie jest on do końca kompatybilny z przeglądarką</li>    
-  </ul>
+        <article class="homework">
+          <h3>Praca domowa - Tydzień V</h3>
 
-</article>
-
-
-
-<article class="homework">
-
-<h3> Praca domowa - Tydzień V </h3>
-
-<ul>
-  <li>Utwórz funkcję powitalną - jako parametr niech przyjmuje imię oraz wiek </li>
-  <li>Potnij wizytówkę i załóż na nią osobne repozytorium</li>
-  <li>Wyśrodkuj linki w nawigacji za pomocą flexboxa
-  <pre>
+          <ul>
+            <li>
+              Utwórz funkcję powitalną - jako parametr niech przyjmuje imię oraz
+              wiek
+            </li>
+            <li>Potnij wizytówkę i załóż na nią osobne repozytorium</li>
+            <li>
+              Wyśrodkuj linki w nawigacji za pomocą flexboxa
+              <pre>
   display: flex;
   justify-content: center;
-  </pre>
-  </li>
-  <li>Stwórz gradient i dodaj go jako tło do strony</li>
-  <li>Przejdź <a href="https://flexboxfroggy.com/">flexbox froggy</a></li>
-</ul>
+  </pre
+              >
+            </li>
+            <li>Stwórz gradient i dodaj go jako tło do strony</li>
+            <li>
+              Przejdź <a href="https://flexboxfroggy.com/">flexbox froggy</a>
+            </li>
+          </ul>
 
+          <pre>
 
-</article>
+   /*  Level 24  */
 
+  flex-flow:column-reverse wrap-reverse;
+  justify-content:center;
+  align-items:center;
+  align-content:space-between;
+  
+  
+  </pre
+          >
+        </article>
 
         <article class="achievements">
           <h3>Achievements</h3>
@@ -1576,6 +1634,28 @@ red; /* color */
             </li>
 
             <li>Stworzenie osobnego folderu dla plików css</li>
+
+            <li>
+              Umieszczenie elementu na środku strony
+              <pre>
+display:flex;           
+justify-content:center; // oś x
+align-items:center; // oś y
+</pre
+              >
+            </li>
+
+            <li>
+              Składnia selektorów:
+              <ul>
+                <li>
+                  elementu dziecka z określoną klasą - <i>parent>child.class</i>
+                </li>
+                <li>kilku elementów - <i>element,element</i></li>
+                <li>wszystkiego w elemencie - <i>element *</i></li>
+                <li>pierwszego elementu - <i>element:first-child</i></li>
+              </ul>
+            </li>
           </ul>
         </article>
       </section>
