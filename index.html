@@ -29,113 +29,61 @@
       </nav>
     </header>
 
-        <header>
+    <header>
       <nav class="navigation__week">
-        <a
-          class="navigation__week__link"
-          href="#week1"
-                  >
+        <a class="navigation__week__link" href="#week1" target="_self">
           Tydzień 1
         </a>
 
-        <a
-          class="navigation__week__link"
-          href="#week2"
-                  >
+        <a class="navigation__week__link" href="#week2" target="_self">
           Tydzień 2
         </a>
-     
-        <a
-         class="navigation__week__link"
-          href="#week3"
-                  >
+
+        <a class="navigation__week__link" href="#week3" target="_self">
           Tydzień 3
         </a>
 
-
-        <a
-      class="navigation__week__link"
-          href="#week4"
-                  >
+        <a class="navigation__week__link" href="#week4" target="_self">
           Tydzień 4
         </a>
 
-  
-        <a
-        class="navigation__week__link"
-          href="#week5"
-                  >
+        <a class="navigation__week__link" href="#week5" target="_self">
           Tydzień 5
         </a>
 
-
-
-        <a
-        class="navigation__week__link"
-          href="#week6"
-                  >
+        <a class="navigation__week__link" href="#week6" target="_self">
           Tydzień 6
         </a>
 
-
-        <a
- class="navigation__week__link"
-          href="#week7"
-                  >
+        <a class="navigation__week__link" href="#week7" target="_self">
           Tydzień 7
         </a>
 
-
-        <a
-        class="navigation__week__link"
-          href="#week8"
-                  >
+        <a class="navigation__week__link" href="#week8" target="_self">
           Tydzień 8
         </a>
 
-
-        <a
-           class="navigation__week__link"
-          href="#week9"
-                  >
+        <a class="navigation__week__link" href="#week9" target="_self">
           Tydzień 9
-
         </a>
-        
-        <a
-     class="navigation__week__link"
-          href="#week10"
-                  >
+
+        <a class="navigation__week__link" href="#week10" target="_self">
           Tydzień 10
-
         </a>
-        
-        <a
-        class="navigation__week__link"
-          href="#week11"
-                  >
+
+        <a class="navigation__week__link" href="#week11" target="_self">
           Tydzień 11
-
         </a>
-        
-        <a
-      class="navigation__week__link"
-          href="#week12"
-                  >
+
+        <a class="navigation__week__link" href="#week12" target="_self">
           Tydzień 12
-
         </a>
-        
-        <a
-         class="navigation__week__link"
-          href="#week13"
-                  >
+
+        <a class="navigation__week__link" href="#week13" target="_self">
           Tydzień 13
-
         </a>
-        </nav>
+      </nav>
     </header>
-
 
     <main>
       <header>
@@ -246,7 +194,7 @@
       </article>
 
       <article class="achievements">
-        <h3 >Achievements</h3>
+        <h3>Achievements</h3>
 
         <ul class="achievements__list">
           <li>
@@ -1817,29 +1765,28 @@ align-items:center; // oś y
                 <li>NaN</li>
               </ul>
             </li>
-            <li> wartości, dla których instrukcja <b>if</b>  zostanie
-              wykonana:
-            
-            <ul>
-            
-            
-            <li>'Tekst'</li>
-            <li>12</li>
-            <li>-4</li>
-            <li>{}</li>
-            <li>[]</li>
-            <li>true</li>
-            <li>itd.</li>
-</li>
-</ul>
+            <li>
+              wartości, dla których instrukcja <b>if</b> zostanie wykonana:
 
-<li>&& - AND - wszystkie warunki muszą być równe true</li>
-<li>|| - OR - conajmniej jeden warunek musi być równy true </li>
-<li>! - NOT - odwraca wartość wyrażenia logicznego</li>
-<li>wyrażenie <b>ELSE</b></li>
-<li>wyrażenie <b>ELSE IF</b>
+              <ul>
+                <li>'Tekst'</li>
+                <li>12</li>
+                <li>-4</li>
+                <li>{}</li>
+                <li>[]</li>
+                <li>true</li>
+                <li>itd.</li>
+              </ul>
+            </li>
 
-<pre>
+            <li>&& - AND - wszystkie warunki muszą być równe true</li>
+            <li>|| - OR - conajmniej jeden warunek musi być równy true</li>
+            <li>! - NOT - odwraca wartość wyrażenia logicznego</li>
+            <li>wyrażenie <b>ELSE</b></li>
+            <li>
+              wyrażenie <b>ELSE IF</b>
+
+              <pre>
 if (myVariable == 4) {
 // wykonaj kod jeśli true
 } else if (myVariable == 8) {
@@ -1849,12 +1796,13 @@ else{
 // wykonaj kod jeśli myVariable != 4 && myVariable !=8
 }
 
-</pre>
+</pre
+              >
+            </li>
 
-</li>
-
-<li>wyrażenie <b>SWITCH</b>
-<pre>
+            <li>
+              wyrażenie <b>SWITCH</b>
+              <pre>
 switch (myVariable) {
 case 4:
 console.log('hi 4');
@@ -1865,276 +1813,259 @@ break;
 default:
 console.log('default response');
 }
-</pre>
+</pre
+              >
+            </li>
 
+            <li>
+              Zapis skrócony -
+              <b
+                >(zmienna1 > zmienna2) ? console.log('true') :
+                console.log('false')</b
+              >
+            </li>
 
+            <li>
+              W tym zapisie wynik tej operacji możemy przypisać do zmiannej
+              <br />
+              const result = (zmienna1 > zmienna2) ? {name:'Maciek'} : true
+            </li>
 
-</li>
+            <li>
+              <a href="https://www.destroyallsoftware.com/talks/wat">
+                Absurdy w języku Java Script
+              </a>
 
-<li>Zapis skrócony - <b>(zmienna1 > zmienna2) ? console.log('true') : console.log('false')</b></li>
-
-<li>W tym zapisie wynik tej operacji możemy przypisać do zmiannej <br> const result = (zmienna1 > zmienna2) ? {name:'Maciek'} : true</li>
-
-<li> <a href="https://www.destroyallsoftware.com/talks/wat"> Absurdy w języku Java Script </a>
-
-
-<ul>
-  <li>console.log([] + []); - pusty string</li>
-  <li>console.log([] + {}); - [object Object]</li>
-  <li>console.log({} + []); - 0</li>
-    <li>console.log({} + {}); - NaN</li>
-
-
-</ul>
-
-
-
- </li>
-
-
+              <ul>
+                <li>console.log([] + []); - pusty string</li>
+                <li>console.log([] + {}); - [object Object]</li>
+                <li>console.log({} + []); - 0</li>
+                <li>console.log({} + {}); - NaN</li>
+              </ul>
+            </li>
           </ul>
         </article>
 
-
-<article class="lesson">
-
-<h3> Formularze </h3>
-
-<ul>
-  <li> &lt;form&gt; - opakowanie</li>
-  <li>&lt;input&gt; - może być użyty w znaczniku &lt;p&gt; albo &lt;div&gt; </li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
-
-
-</article>
-
-
-<article class="lesson">
-
-<h3>  </h3>
-
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
-
-
-</article>
-
-
-<article class="lesson">
-
-<h3>  </h3>
-
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
-
-
-</article>
-
-
-<article class="lesson">
-
-<h3>  </h3>
-
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
-
-
-</article>
-
-
-<article class="lesson">
-
-<h3>  </h3>
-
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
-
-
-</article>
-
-
-<article class="lesson">
-
-<h3>  </h3>
-
-
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
-
-</article>
-
-
-
-<article class="lesson">
-
-<h3>  </h3>
-
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
-
-
-</article>
-
-
-
-<article class="lesson">
-
-<h3>  </h3>
-
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
-
-
-</article>
-
-
-<article class="lesson">
-
-<h3>  </h3>
-
-
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
-
-</article>
-
-
-<article class="lesson">
-
-<h3>  </h3>
-
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
-
-
-</article>
-
-
-
-<article class="lesson">
-
-<h3>  </h3>
-
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
-
-
-</article>
-
-
-
-<article class="lesson">
-
-<h3>  </h3>
-
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
-
-
-</article>
-
-
-
-<article class="lesson">
-
-<h3>  </h3>
-
-<ul>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-  <li></li>
-</ul>
-
-
-</article>
-
-
+        <article class="lesson">
+          <h3>Formularze: FORM, INPUT, LABEL</h3>
+
+          <ul>
+            <li>
+              &lt;form&gt; - opakowanie
+              <ul>
+                <li>
+                  &lt;p&gt; albo &lt;div&gt;
+
+                  <ul>
+                  <ol>
+                    <li>
+                      &lt;label for="firstName"&gt; First name: &lt;/label&gt;
+                   
+<br>
+                 
+                      &lt;input placeholder="tip" value="defaultValue" type = "text" id ="firstName" name="firstName"&gt;
+                    </li>
+
+       <li>
+                      &lt;label&gt; Your last name: 
+                   
+<br>
+               
+                      &lt;input placeholder="tip" value="defaultValue" type = "text" id ="lastName" name="lastName"&gt;
+                      
+                      <br>
+                       &lt;/label&gt;
+                    </li>
+
+                    <ol>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+           
+              <form class="form">
+               <p> <label for="firstName"> First name:</label>
+                <input class="form__item" type="text" value="Andrzej" id="firstName" name="firstName" /></p>
+
+
+
+                <p>   <label> Last name:
+               <input class="form__item"  type="text" placeholder="input your last name" id="lastName" name="lasttName" />
+               </label>
+               </p>
+              </form>
+          
+        
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3>Formularze: FIELDSET, RADIO, CHECKBOX</h3>
+
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3></h3>
+
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3></h3>
+
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3></h3>
+
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3></h3>
+
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3></h3>
+
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3></h3>
+
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3></h3>
+
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3></h3>
+
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3></h3>
+
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3></h3>
+
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3></h3>
+
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </article>
 
         <article class="achievements">
           <h3>Achievements</h3>

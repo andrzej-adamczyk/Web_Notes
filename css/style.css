@@ -70,12 +70,13 @@ a {
   background-color: rgba(238, 15, 219, 0.3);
 
   /* text-align: center; */
-  /* position: fixed; */
+  /* position: fixed;   */
   top: 0;
   padding: 1px;
   border-radius: 8px;
   margin-top: 5vh;
   margin-bottom: 2vh;
+  min-height: 80px;
 }
 
 .navigation__week__link {
@@ -85,8 +86,8 @@ a {
   background-color: rgba(255, 255, 255, 0.5);
   font-size: x-large;
   text-decoration: none;
-  height: 10vh;
   width: 7%;
+  text-align: center;
 
   align-self: center;
 }
@@ -257,3 +258,12 @@ ol {
 }
 
 /*  */
+
+.form {
+  padding-bottom: 10px;
+}
+
+.form__item {
+  display: block;
+  width: 25%;
+}
