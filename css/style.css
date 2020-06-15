@@ -63,20 +63,26 @@ a {
 .navigation__week {
   list-style-type: none;
   display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
 
-  background-color: rgba(238, 15, 219, 0.3);
+  justify-content: center;
+
+  flex-wrap: nowrap;
+
+  background-color: black;
 
   /* text-align: center; */
-  /* position: fixed;   */
+  position: fixed;
+
   top: 0;
+  left: 0;
+  right: 0;
   padding: 1px;
   border-radius: 8px;
   margin-top: 5vh;
   margin-bottom: 2vh;
   min-height: 80px;
+
+  z-index: 1;
 }
 
 .navigation__week__link {
