@@ -2089,7 +2089,7 @@ myPassword.value
       <p>(type="file" multiple - przeglądarka plików z wielokrotnym wyborem)</p>
 
 <label> File
-<input class="form__item file--js" id="myPassword"  name="myFile" type="file" multiple >
+<input class="form__item file--js" id="myPassword"  name="myFile" type="file" multiple />
 </label>
 
 
@@ -2105,17 +2105,58 @@ myPassword.value
         </article>
 
         <article class="lesson">
-          <h3>Formularze - SELECT, TEXTAREA< SUBMIT</h3>
+          <h3>Formularze - SELECT, TEXTAREA, SUBMIT</h3>
 
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+
+<p>&lt;select&gt;  &lt;option&gt; - możliwość wyboru z dropdowna </p>
+
+<p> <label for='team'> Pick one team </label>
+
+<select name="team">
+
+<option value="team-1">Warriors</option>
+
+<option value="team-2">Boston</option>
+
+
+<option value="team-3">Clippers</option>
+
+
+</select>
+
+</p>
+
+
+<p> &lt;textarea&gt;
+<ul>
+
+            <li> używany w przypadku wprowadzania dłuższej treści,</li>
+            <li>brak value</li>
+            <li>możliwe rozciągnięcie</li>
+
+</ul>
+
+<p>
+<label for="myStory"> My story </label>
+
+<textarea id = "myStory"> My story is</textarea>
+
+</p>
+
+<p> input type = "submit"  </p>
+
+<ul>
+            <li>nie posiada labela</li>
+            <li> wysyła formularz</li>
+
+
+<p>
+
+<input name = "send" type = "submit"value="send"> 
+</p>
+
+
+
         </article>
 
         <article class="lesson">

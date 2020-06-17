@@ -273,3 +273,7 @@ ol {
   display: block;
   width: 25%;
 }
+
+.form label {
+  display: block;
+}
