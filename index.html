@@ -1903,32 +1903,209 @@ console.log('default response');
           <h3>Formularze: FIELDSET, RADIO, CHECKBOX</h3>
 
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li> &lt;fieldset&gt; - grupa pól</li>
+            <li> &lt;legend&gt; - opis grupy pól</li>
+
+<fieldset>
+
+<legend>Address</legend>
+
+                <p>   <label> Street name:
+               <input class="form__item"  type="text" placeholder="input your street name" id="streetName" name="streetName" />
+               </label>
+               </p>
+</fieldset>
+
+
+<fieldset>
+
+<legend>City</legend>
+
+                <p>   <label> City name:
+               <input class="form__item"  type="text" placeholder="input your city name" id="cityName" name="cityName" />
+               </label>
+               </p>
+</fieldset>
+
+
+
+            <li> &lt;input type=""radio"&gt; - name dla każdego z inputów w tym przypadku musi być takie samo!</li>
+
+<fieldset>
+
+<legend> Favourite sport</legend>
+
+<p>
+<label for="favSport">
+<input type = "radio" checked name = "favSport" value="Basketball"> Basketball
+
+</label>
+
+ </p>
+
+<p>
+<label for="favSport">
+<input type = "radio" name = "favSport" value="Football"> Football
+
+</label>
+
+ </p>
+
+<p>
+<label for="favSport">
+<input type = "radio" name = "favSport" value="Voleyball"> Voleyball
+
+</label>
+
+ </p>
+
+
+
+</fieldset>
+
+
+
+            <li> &lt;input type=""checkbox"&gt; - możliwość wielokrotnego wyboru</li>
+             <li> właściwość 'checked' zaznacza wskazaną wartość zarówno w przypadku inputu typu 'radio' jak i 'checkbox'</li>
+
+<fieldset>
+
+<legend> To do list:</legend>
+
+<p>
+<label for="toDoList">
+<input type = "checkbox" checked name = "toDoList" value="eat"> eat
+
+</label>
+
+ </p>
+
+<p>
+<label for="toDoList">
+<input type = "checkbox" name = "toDoList" value="drink"> drink
+
+</label>
+
+ </p>
+
+<p>
+<label for="toDoList">
+<input type = "checkbox" name = "toDoList" value="sleep"> sleep
+
+</label>
+
+ </p>
+
+
+
+</fieldset>
+
+
+
           </ul>
         </article>
 
         <article class="lesson">
-          <h3></h3>
+          <h3>Formularze: NUMBER, TEL, EMAIL, RANGE, PASSWORD, FILE</h3>
 
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+
+            
+            
+                  
+
+<fieldset> 
+
+<legend>Dane kontaktowe</legend>
+
+
+
+
+<p> 
+<p>(type="number"- wymusza wprowadzenie cyfr - bez spacji )</p>
+<label> ID (number)
+<input class="form__item" id="myID" placeholder = "wprowadź swoje ID" name="myID" type="number" >
+</label>
+
+   </p>
+
+
+   <p>
+
+<p>(type="tel"- z powodu na brak ogólnoświatowego standardu można wprowadzać tam wszystkie znaki) </p>
+<label> Phone
+<input class="form__item" id="phoneNumber" placeholder = "wprowadź swój telefon" name="phoneNumber" type="tel" >
+</label>
+
+   </p>
+
+      <p>
+
+     <p> (type="email" autocomplete="on"- pokazuje w dropdownie użyte wcześniej adresy mailowe)</p>
+                           
+<label> Email
+<input class="form__item" id="myEmail" placeholder = "wprowadź swój email" autocomplete = "on" name="myEmail" type="email" >
+</label>
+
+   </p>
+
+   
+      <p>
+
+      <p>(type="range" min="0" max="100" step="10" - pokazuje suwak ze wskaźnikiem)</p>
+
+
+<label> Experience
+<input class="form__item range--js" id="myExperience"  name="myExperience" type="range" min="0" max="100" step="10" >
+</label>
+
+   </p>
+
+   <p>pobranie wartości suwaka za pomocą JS: </p>
+
+<pre>
+const myRange = document.querySelector('.range--js');
+myRange.value
+</pre>
+
+<p>
+      <p>(type="password" - pokazuje kropki zamiast wartości wpisywanych)</p>
+
+<label> Password
+<input class="form__item password--js" id="myPassword"  name="myPassword" type="password" placeholder="Wprowadź swoje hasło" >
+</label>
+
+
+</p>
+
+   <p>pobranie wartości hasła za pomocą JS: </p>
+
+<pre>
+const myPassword = document.querySelector('.password--js');
+myPassword.value
+</pre>
+
+
+<p>
+      <p>(type="file" multiple - przeglądarka plików z wielokrotnym wyborem)</p>
+
+<label> File
+<input class="form__item file--js" id="myPassword"  name="myFile" type="file" multiple >
+</label>
+
+
+
+</p>
+
+
+   </fieldset>
+<ul>
+
+
+ 
         </article>
 
         <article class="lesson">
-          <h3></h3>
+          <h3>Formularze - SELECT, TEXTAREA< SUBMIT</h3>
 
           <ul>
             <li></li>
