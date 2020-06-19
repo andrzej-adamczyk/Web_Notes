@@ -1,0 +1,28 @@
+.form {
+  padding-bottom: 10px;
+}
+
+.form__item {
+  display: block;
+  width: 25%;
+}
+
+.form label {
+  display: block;
+}
+
+body {
+  background-color: #f397d6;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  background-color: #f42272;
+
+  flex-direction: column;
+
+  color: white;
+
+  width: 50vw;
+}
