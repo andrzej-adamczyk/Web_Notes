@@ -2142,7 +2142,7 @@ myPassword.value
 
 </ul>
 
-<form class="form">
+<form class="form" action="https://dev.cotenfrontend.pl/">
 
 <p>
  <label for="myStory">My story</label> 
@@ -2176,33 +2176,61 @@ myPassword.value
           <h3>GET i POST</h3>
 
           <ul>
+
+          <li>wysyłana jest wartość znajdująca się pod "value" a nie label</li>
             <li>form action="https://dev.cotenfrontend.pl/"</li>
-            <li> <a href="/sources/form/form.html">Przykład działania żądania GET </a>
+
+                    <li>Żądanie GET
+                    <ul>
+                    <li>domyślny typ żądania
+                    
+                    
+                    </li>
+
+                    <li>dopisuje parametry do adresu - https://dev.cotenfrontend.pl/?parametr=wartosc</li>
+                    <li>parametry można także podejrzeć w Developer Tools\Network\Headers\Query String Parameters</li>
+                    <li>używany do wysyłania danych</li>
+                    </ul>
+                    
+                    
+                    </li>
+        <li>Żądanie POST
+
+            <ul>
+            <li>  form method="post" </li>
+            <li> nie dopisuje parametrów do adresu </li>
+            <li>parametry można także podejrzeć w Developer Tools\Network\Headers\Form Data</li>
+            <li>jest bezpieczniejszy, bo nie można zmodyfikować go w adresie przeglądarki albo sztucznie wywołać</li>
+            <li>używany do pobierania danych</li>
+            </ul>
+          </li>
+
+               <li> <a href="/sources/form/form.html">Przykład działania żądania GET/POST </a>
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>&lt;form enctype="value"&gt;
+
+            <ul>
+            <li><strong>application/x-www-form-urlencoded</strong> - wartość domyślna</li>
+            <li><strong>multipart/form-data</strong> - wartość używana przy wysyłaniu plików </li>
+            
+            </ul>
+            </li>
+            
           </ul>
         </article>
 
         <article class="lesson">
-          <h3></h3>
+          <h3>Formularze - walidacja</h3>
 
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><strong>required</strong> - wartość wymagana</li>
+            <li><strong>pattern = "[a-zA-Z0-9]+"</strong> - wyrażenia regularne </li>
+    
           </ul>
         </article>
 
         <article class="lesson">
-          <h3></h3>
+          <h3>CSS Grid</h3>
 
           <ul>
             <li></li>

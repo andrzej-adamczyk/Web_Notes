@@ -10,8 +10,13 @@
     <main>
       <h1>Forms playground</h1>
 
-      <form class="form" action="https://dev.cotenfrontend.pl/">
-        <!-- <p>
+      <form
+        method="post"
+        enctype="multipart/form-datas"
+        class="form"
+        action="https://dev.cotenfrontend.pl/"
+      >
+        <p>
           <label for="firstName"> First name:</label>
           <input
             class="form__item"
@@ -19,8 +24,9 @@
             value="Andrzej"
             id="firstName"
             name="firstName"
+            required
           />
-        </p> -->
+        </p>
 
         <p>
           <label>
@@ -31,6 +37,8 @@
               placeholder="input your last name"
               id="lastName"
               name="lasttName"
+              pattern="[a-zA-Z0]+"
+              required
             />
           </label>
         </p>
@@ -159,6 +167,20 @@
                 placeholder="input your city name"
                 id="cityName"
                 name="cityName"
+              />
+            </label>
+          </p>
+
+          <p>
+            <label>
+              Kod pocztowy:
+              <input
+                class="form__item"
+                type="text"
+                placeholder="input your postal code"
+                id="postalCode"
+                name="postalCode"
+                pattern="[0-9]{2}-[0-9]{3}"
               />
             </label>
           </p>
