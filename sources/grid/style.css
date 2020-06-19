@@ -1,0 +1,14 @@
+body {
+  background: rgba(199, 147, 147, 0.5);
+  color: black;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid__element {
+}
+
+.grid__element--6 {
+}
