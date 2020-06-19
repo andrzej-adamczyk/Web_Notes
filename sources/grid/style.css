@@ -5,9 +5,16 @@ body {
 
 .grid {
   display: grid;
+  grid-template-columns: repeat(3, 1fr) minmax(10px, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 22px;
+  row-gap: 3px;
 }
 
 .grid__element {
+  background: hotpink;
+  padding: 10px;
+  color: rebeccapurple;
 }
 
 .grid__element--6 {
