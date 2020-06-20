@@ -245,3 +245,44 @@ console.log("typ danych wyniku {} + {} to " + typeof value4);
 // console.log(arraySample);
 
 // console.log(typeof arraySample);
+
+// Tydzień VI
+
+const button = document.querySelector(".action--js");
+
+console.log(button);
+
+//1 sposób
+
+// const myClick = () => {
+//   const heading = document.querySelector(".header__JS--events");
+//   heading.innerHTML = "Edytowany nagłówek 'JS:Eventy'";
+//   console.log("Button został kliknięty");
+// };
+
+// button.addEventListener("click", myClick);
+
+// button.addEventListener("click", (e) => {
+//   console.log(e);
+// });
+
+// button.addEventListener("click", (e) => {
+//   console.log(e.target);
+// });
+
+// 2 sposób
+
+button.addEventListener("click", () => {
+  const heading = document.querySelector(".header__JS--events");
+  heading.innerHTML = "Edytowany nagłówek 'JS:Eventy'";
+});
+
+//restore
+const button_restore = document.querySelector(".action--js_restore");
+
+console.log(button_restore);
+
+button_restore.addEventListener("click", () => {
+  const heading = document.querySelector(".header__JS--events");
+  heading.innerHTML = heading;
+});

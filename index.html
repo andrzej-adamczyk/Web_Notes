@@ -2392,25 +2392,92 @@ myPassword.value
               <abr title="Responsive Web Design">RWD</abr> - Responsive Web
               Design
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              @media
+              <ul>
+                <li>
+                  działa jak osobny plik css, więc wymaga wpisania selektorów
+                </li>
+                <li>
+                  należy stosować na końcu pliku css, zgodnie z zasadą
+                  specyficzności
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              media type - rodzaj urządzenia, na którym chcemy wyświetlić stronę
+              <ul>
+                <li>screen</li>
+                <li>print</li>
+                <li>all</li>
+              </ul>
+            </li>
+            <li>
+              media features - rozmiar strony
+              <ul>
+                <li>min-width</li>
+                <li>max-width</li>
+                <li>color</li>
+                <li>aspect-ratio</li>
+                <li>orientation</li>
+              </ul>
+            </li>
+            <li>
+              operatory, za pomocą których możemy łączyć
+
+              <ul>
+                <li>and</li>
+                <li>not</li>
+                <li>, (działa jak or)</li>
+              </ul>
+            </li>
+            <li>
+              mobile-first - stylowanie nakierunkowane na urządzenia mobilne
+            </li>
+            <li>breakpoint - miejsca, w którym następuje zmiana styli</li>
+            <li>device toolbar w Dev Tools/Console</li>
           </ul>
         </article>
 
         <article class="lesson">
-          <h3></h3>
-
+          <h3 class="header__JS--events">JS:Eventy</h3>
+          <button class="action--js">zmień nagłówek</button>
+          <button class="action--js_restore">przywróć nagłówek</button>
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>&lt;a&gt; - nawigacja na stronie</li>
+
+            <li>&lt;button&gt; - interakcja na stronie</li>
+            <li>
+              <code>element.addEventListener(type, listener [, options])</code>
+            </li>
+            <li>
+              mouse events
+
+              <ul>
+                <li>click</li>
+                <li>mouseenter</li>
+                <li>mouseleave</li>
+                <li>mouseover</li>
+              </ul>
+            </li>
+            <li>
+              <pre>
+function handleClick() {
+ console.log('click click');
+}
+element.addEventListener('click', nazwaFunkcji);
+</pre
+              >
+            </li>
+            <li>
+              <pre>
+element.addEventListener('click', (e) => {
+ ...
+})
+</pre
+              >
+            </li>
             <li></li>
           </ul>
         </article>
