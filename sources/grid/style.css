@@ -5,14 +5,14 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr) minmax(10px, 1fr);
+  grid-template-columns: repeat(2, 1fr) minmax(10px, 1fr);
   grid-template-rows: repeat(3, 1fr);
   column-gap: 22px;
   row-gap: 3px;
 }
 
 .grid__element {
-  background: hotpink;
+  background: rgba(131, 30, 109, 0.1);
   padding: 10px;
   color: rebeccapurple;
 }
@@ -51,7 +51,7 @@ main {
   grid-area: 2 / pierwsza / 3 / trzecia;
 }
 
-aside {
+.aside {
   grid-area: aside;
   background: lightsalmon;
   grid-row-start: 2;

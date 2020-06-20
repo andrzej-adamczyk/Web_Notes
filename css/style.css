@@ -280,3 +280,7 @@ ol {
 .form label {
   display: block;
 }
+
+abr {
+  font-weight: bold;
+}
