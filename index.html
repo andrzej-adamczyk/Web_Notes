@@ -1856,366 +1856,415 @@ console.log('default response');
                 <li>
                   &lt;p&gt; albo &lt;div&gt;
 
-                  <ul>
                   <ol>
                     <li>
                       &lt;label for="firstName"&gt; First name: &lt;/label&gt;
-                   
-<br>
-                 
-                      &lt;input placeholder="tip" value="defaultValue" type = "text" id ="firstName" name="firstName"&gt;
+
+                      <br />
+
+                      &lt;input placeholder="tip" value="defaultValue" type =
+                      "text" id ="firstName" name="firstName"&gt;
                     </li>
 
-       <li>
-                      &lt;label&gt; Your last name: 
-                   
-<br>
-               
-                      &lt;input placeholder="tip" value="defaultValue" type = "text" id ="lastName" name="lastName"&gt;
-                      
-                      <br>
-                       &lt;/label&gt;
-                    </li>
+                    <li>
+                      &lt;label&gt; Your last name:
 
-                    <ol>
-                  </ul>
+                      <br />
+
+                      &lt;input placeholder="tip" value="defaultValue" type =
+                      "text" id ="lastName" name="lastName"&gt;
+
+                      <br />
+                      &lt;/label&gt;
+                    </li>
+                  </ol>
                 </li>
               </ul>
             </li>
-           
-              <form class="form">
-               <p> <label for="firstName"> First name:</label>
-                <input class="form__item" type="text" value="Andrzej" id="firstName" name="firstName" /></p>
-
-
-
-                <p>   <label> Last name:
-               <input class="form__item"  type="text" placeholder="input your last name" id="lastName" name="lasttName" />
-               </label>
-               </p>
-              </form>
-          
-        
           </ul>
+
+          <form class="form">
+            <p>
+              <label for="firstName"> First name:</label>
+              <input
+                class="form__item"
+                type="text"
+                value="Andrzej"
+                id="firstName"
+                name="firstName"
+              />
+            </p>
+
+            <p>
+              <label>
+                Last name:
+                <input
+                  class="form__item"
+                  type="text"
+                  placeholder="input your last name"
+                  id="lastName"
+                  name="lasttName"
+                />
+              </label>
+            </p>
+          </form>
         </article>
 
         <article class="lesson">
           <h3>Formularze: FIELDSET, RADIO, CHECKBOX</h3>
 
           <ul>
-            <li> &lt;fieldset&gt; - grupa pól</li>
-            <li> &lt;legend&gt; - opis grupy pól</li>
+            <li>&lt;fieldset&gt; - grupa pól</li>
+            <li>&lt;legend&gt; - opis grupy pól</li>
+          </ul>
+          <fieldset>
+            <legend>Address</legend>
 
-<fieldset>
+            <p>
+              <label>
+                Street name:
+                <input
+                  class="form__item"
+                  type="text"
+                  placeholder="input your street name"
+                  id="streetName"
+                  name="streetName"
+                />
+              </label>
+            </p>
+          </fieldset>
 
-<legend>Address</legend>
+          <fieldset>
+            <legend>City</legend>
 
-                <p>   <label> Street name:
-               <input class="form__item"  type="text" placeholder="input your street name" id="streetName" name="streetName" />
-               </label>
-               </p>
-</fieldset>
+            <p>
+              <label>
+                City name:
+                <input
+                  class="form__item"
+                  type="text"
+                  placeholder="input your city name"
+                  id="cityName"
+                  name="cityName"
+                />
+              </label>
+            </p>
+          </fieldset>
 
+          <ul>
+            <li>
+              &lt;input type=""radio"&gt; - name dla każdego z inputów w tym
+              przypadku musi być takie samo!
+            </li>
+          </ul>
+          <fieldset>
+            <legend>Favourite sport</legend>
 
-<fieldset>
+            <p>
+              <label>
+                <input
+                  type="radio"
+                  checked
+                  name="favSport"
+                  value="Basketball"
+                />
+                Basketball
+              </label>
+            </p>
 
-<legend>City</legend>
+            <p>
+              <label>
+                <input type="radio" name="favSport" value="Football" /> Football
+              </label>
+            </p>
 
-                <p>   <label> City name:
-               <input class="form__item"  type="text" placeholder="input your city name" id="cityName" name="cityName" />
-               </label>
-               </p>
-</fieldset>
+            <p>
+              <label>
+                <input type="radio" name="favSport" value="Voleyball" />
+                Voleyball
+              </label>
+            </p>
+          </fieldset>
 
+          <ul>
+            <li>
+              &lt;input type=""checkbox"&gt; - możliwość wielokrotnego wyboru
+            </li>
+          </ul>
 
+          <fieldset>
+            <legend>To do list:</legend>
 
-            <li> &lt;input type=""radio"&gt; - name dla każdego z inputów w tym przypadku musi być takie samo!</li>
+            <p>
+              <label>
+                <input type="checkbox" checked name="toDoList" value="eat" />
+                eat
+              </label>
+            </p>
 
-<fieldset>
+            <p>
+              <label>
+                <input type="checkbox" name="toDoList" value="drink" /> drink
+              </label>
+            </p>
 
-<legend> Favourite sport</legend>
-
-<p>
-<label for="favSport">
-<input type = "radio" checked name = "favSport" value="Basketball"> Basketball
-
-</label>
-
- </p>
-
-<p>
-<label for="favSport">
-<input type = "radio" name = "favSport" value="Football"> Football
-
-</label>
-
- </p>
-
-<p>
-<label for="favSport">
-<input type = "radio" name = "favSport" value="Voleyball"> Voleyball
-
-</label>
-
- </p>
-
-
-
-</fieldset>
-
-
-
-            <li> &lt;input type=""checkbox"&gt; - możliwość wielokrotnego wyboru</li>
-             <li> właściwość 'checked' zaznacza wskazaną wartość zarówno w przypadku inputu typu 'radio' jak i 'checkbox'</li>
-
-<fieldset>
-
-<legend> To do list:</legend>
-
-<p>
-<label for="toDoList">
-<input type = "checkbox" checked name = "toDoList" value="eat"> eat
-
-</label>
-
- </p>
-
-<p>
-<label for="toDoList">
-<input type = "checkbox" name = "toDoList" value="drink"> drink
-
-</label>
-
- </p>
-
-<p>
-<label for="toDoList">
-<input type = "checkbox" name = "toDoList" value="sleep"> sleep
-
-</label>
-
- </p>
-
-
-
-</fieldset>
-
-
-
+            <p>
+              <label>
+                <input type="checkbox" name="toDoList" value="sleep" /> sleep
+              </label>
+            </p>
+          </fieldset>
+          <ul>
+            <li>
+              właściwość 'checked' zaznacza wskazaną wartość zarówno w przypadku
+              inputu typu 'radio' jak i 'checkbox'
+            </li>
           </ul>
         </article>
 
         <article class="lesson">
           <h3>Formularze: NUMBER, TEL, EMAIL, RANGE, PASSWORD, FILE</h3>
 
+          <fieldset>
+            <legend>Dane kontaktowe</legend>
 
-            
-            
-                  
+            <p>(type="number"- wymusza wprowadzenie cyfr - bez spacji )</p>
 
-<fieldset> 
+            <p>
+              <label>
+                ID (number)
+                <input
+                  class="form__item"
+                  id="myID"
+                  placeholder="wprowadź swoje ID"
+                  name="myID"
+                  type="number"
+                />
+              </label>
+            </p>
 
-<legend>Dane kontaktowe</legend>
+            <p>
+              (type="tel"- z powodu na brak ogólnoświatowego standardu można
+              wprowadzać tam wszystkie znaki)
+            </p>
+            <p>
+              <label>
+                Phone
+                <input
+                  class="form__item"
+                  id="phoneNumber"
+                  placeholder="wprowadź swój telefon"
+                  name="phoneNumber"
+                  type="tel"
+                />
+              </label>
+            </p>
 
+            <p>
+              (type="email" autocomplete="on"- pokazuje w dropdownie użyte
+              wcześniej adresy mailowe)
+            </p>
+            <p>
+              <label>
+                Email
+                <input
+                  class="form__item"
+                  id="myEmail"
+                  placeholder="wprowadź swój email"
+                  autocomplete="on"
+                  name="myEmail"
+                  type="email"
+                />
+              </label>
+            </p>
 
+            <p>
+              (type="range" min="0" max="100" step="10" - pokazuje suwak ze
+              wskaźnikiem)
+            </p>
 
+            <p>
+              <label>
+                Experience
+                <input
+                  class="form__item range--js"
+                  id="myExperience"
+                  name="myExperience"
+                  type="range"
+                  min="0"
+                  max="100"
+                  step="10"
+                />
+              </label>
+            </p>
 
-<p> 
-<p>(type="number"- wymusza wprowadzenie cyfr - bez spacji )</p>
-<label> ID (number)
-<input class="form__item" id="myID" placeholder = "wprowadź swoje ID" name="myID" type="number" >
-</label>
+            <p>pobranie wartości suwaka za pomocą JS:</p>
 
-   </p>
-
-
-   <p>
-
-<p>(type="tel"- z powodu na brak ogólnoświatowego standardu można wprowadzać tam wszystkie znaki) </p>
-<label> Phone
-<input class="form__item" id="phoneNumber" placeholder = "wprowadź swój telefon" name="phoneNumber" type="tel" >
-</label>
-
-   </p>
-
-      <p>
-
-     <p> (type="email" autocomplete="on"- pokazuje w dropdownie użyte wcześniej adresy mailowe)</p>
-                           
-<label> Email
-<input class="form__item" id="myEmail" placeholder = "wprowadź swój email" autocomplete = "on" name="myEmail" type="email" >
-</label>
-
-   </p>
-
-   
-      <p>
-
-      <p>(type="range" min="0" max="100" step="10" - pokazuje suwak ze wskaźnikiem)</p>
-
-
-<label> Experience
-<input class="form__item range--js" id="myExperience"  name="myExperience" type="range" min="0" max="100" step="10" >
-</label>
-
-   </p>
-
-   <p>pobranie wartości suwaka za pomocą JS: </p>
-
-<pre>
+            <pre>
 const myRange = document.querySelector('.range--js');
 myRange.value
-</pre>
+</pre
+            >
 
-<p>
-      <p>(type="password" - pokazuje kropki zamiast wartości wpisywanych)</p>
+            <p>
+              (type="password" - pokazuje kropki zamiast wartości wpisywanych)
+            </p>
+            <p>
+              <label>
+                Password
+                <input
+                  class="form__item password--js"
+                  id="myPassword"
+                  name="myPassword"
+                  type="password"
+                  placeholder="Wprowadź swoje hasło"
+                />
+              </label>
+            </p>
 
-<label> Password
-<input class="form__item password--js" id="myPassword"  name="myPassword" type="password" placeholder="Wprowadź swoje hasło" >
-</label>
+            <p>pobranie wartości hasła za pomocą JS:</p>
 
-
-</p>
-
-   <p>pobranie wartości hasła za pomocą JS: </p>
-
-<pre>
+            <pre>
 const myPassword = document.querySelector('.password--js');
 myPassword.value
-</pre>
+</pre
+            >
 
+            <p>
+              (type="file" multiple - przeglądarka plików z wielokrotnym
+              wyborem)
+            </p>
 
-<p>
-      <p>(type="file" multiple - przeglądarka plików z wielokrotnym wyborem)</p>
-
-<label> File
-<input class="form__item file--js" id="myPassword"  name="myFile" type="file" multiple />
-</label>
-
-
-
-</p>
-
-
-   </fieldset>
-<ul>
-
-
- 
+            <p>
+              <label>
+                File
+                <input
+                  class="form__item file--js"
+                  id="myFile"
+                  name="myFile"
+                  type="file"
+                  multiple
+                />
+              </label>
+            </p>
+          </fieldset>
         </article>
 
         <article class="lesson">
           <h3>Formularze - SELECT, TEXTAREA, SUBMIT</h3>
 
+          <p>&lt;select&gt; &lt;option&gt; - możliwość wyboru z dropdowna</p>
 
-<p>&lt;select&gt;  &lt;option&gt; - możliwość wyboru z dropdowna </p>
+          <form class="form">
+            <p>
+              <label> Pick one team 
 
-<fieldset>
+              <select name="team">
+                <option value="team-1">Warriors</option>
 
-<form class="form">
+                <option value="team-2">Boston</option>
 
-<p> <label for='team'> Pick one team </label>
+                <option value="team-3">Clippers</option>
+              </select>
+              </label>a
+            </p>
+          </form>
 
-<select name="team">
-
-<option value="team-1">Warriors</option>
-
-<option value="team-2">Boston</option>
-
-
-<option value="team-3">Clippers</option>
-
-
-</select>
-
-</p>
-
-</form>
-
-
-<p> &lt;textarea&gt;
-<ul>
-
-            <li> używany w przypadku wprowadzania dłuższej treści,</li>
+          <p>&lt;textarea&gt;</p>
+          <ul>
+            <li>używany w przypadku wprowadzania dłuższej treści,</li>
             <li>brak value</li>
             <li>możliwe rozciągnięcie</li>
+          </ul>
 
-</ul>
+          <form class="form" action="https://dev.cotenfrontend.pl/">
+            <p>
+              <label for="myStory">My story</label>
 
-<form class="form" action="https://dev.cotenfrontend.pl/">
+              <textarea id="myStory">My story is</textarea>
+            </p>
+          </form>
 
-<p>
- <label for="myStory">My story</label> 
+          <ul>
+            <li>
+              input type = "submit"
 
-<textarea id = "myStory">My story is</textarea>
+              <ul>
+                <li>nie posiada labela</li>
+                <li>wysyła formularz</li>
+              </ul>
+            </li>
+          </ul>
 
-
-
-</p>
-
-
-
-<p> input type = "submit"  </p>
-
-<ul>
-            <li>nie posiada labela</li>
-            <li> wysyła formularz</li>
-
-
-<p>
-
-<input name = "send" type = "submit"value="send"> 
-</p>
-
-</form>
-
-
+          <form class="form">
+            <p>
+              <input name="send" type="submit" value="send" />
+            </p>
+          </form>
         </article>
 
         <article class="lesson">
           <h3>GET i POST</h3>
 
           <ul>
-
-          <li>wysyłana jest wartość znajdująca się pod "value" a nie label</li>
+            <li>
+              wysyłana jest wartość znajdująca się pod "value" a nie label
+            </li>
             <li>form action="https://dev.cotenfrontend.pl/"</li>
 
-                    <li>Żądanie GET
-                    <ul>
-                    <li>domyślny typ żądania
-                    
-                    
-                    </li>
+            <li>
+              Żądanie GET
+              <ul>
+                <li>domyślny typ żądania</li>
 
-                    <li>dopisuje parametry do adresu - https://dev.cotenfrontend.pl/?parametr=wartosc</li>
-                    <li>parametry można także podejrzeć w Developer Tools\Network\Headers\Query String Parameters</li>
-                    <li>używany do wysyłania danych</li>
-                    </ul>
-                    
-                    
-                    </li>
-        <li>Żądanie POST
-
-            <ul>
-            <li>  form method="post" </li>
-            <li> nie dopisuje parametrów do adresu </li>
-            <li>parametry można także podejrzeć w Developer Tools\Network\Headers\Form Data</li>
-            <li>jest bezpieczniejszy, bo nie można zmodyfikować go w adresie przeglądarki albo sztucznie wywołać</li>
-            <li>używany do pobierania danych</li>
-            </ul>
-          </li>
-
-               <li> <a href="/sources/form/form.html">Przykład działania żądania GET/POST </a>
+                <li>
+                  dopisuje parametry do adresu -
+                  https://dev.cotenfrontend.pl/?parametr=wartosc
+                </li>
+                <li>
+                  parametry można także podejrzeć w Developer
+                  Tools\Network\Headers\Query String Parameters
+                </li>
+                <li>używany do wysyłania danych</li>
+              </ul>
             </li>
-            <li>&lt;form enctype="value"&gt;
+            <li>
+              Żądanie POST
 
-            <ul>
-            <li><strong>application/x-www-form-urlencoded</strong> - wartość domyślna</li>
-            <li><strong>multipart/form-data</strong> - wartość używana przy wysyłaniu plików </li>
-            
-            </ul>
+              <ul>
+                <li>form method="post"</li>
+                <li>nie dopisuje parametrów do adresu</li>
+                <li>
+                  parametry można także podejrzeć w Developer
+                  Tools\Network\Headers\Form Data
+                </li>
+                <li>
+                  jest bezpieczniejszy, bo nie można zmodyfikować go w adresie
+                  przeglądarki albo sztucznie wywołać
+                </li>
+                <li>używany do pobierania danych</li>
+              </ul>
             </li>
-            
+
+            <li>
+              <a href="/sources/form/form.html"
+                >Przykład działania żądania GET/POST
+              </a>
+            </li>
+            <li>
+              &lt;form enctype="value"&gt;
+
+              <ul>
+                <li>
+                  <strong>application/x-www-form-urlencoded</strong> - wartość
+                  domyślna
+                </li>
+                <li>
+                  <strong>multipart/form-data</strong> - wartość używana przy
+                  wysyłaniu plików
+                </li>
+              </ul>
+            </li>
           </ul>
         </article>
 
@@ -2224,8 +2273,9 @@ myPassword.value
 
           <ul>
             <li><strong>required</strong> - wartość wymagana</li>
-            <li><strong>pattern = "[a-zA-Z0-9]+"</strong> - wyrażenia regularne </li>
-    
+            <li>
+              <strong>pattern = "[a-zA-Z0-9]+"</strong> - wyrażenia regularne
+            </li>
           </ul>
         </article>
 
@@ -2233,22 +2283,48 @@ myPassword.value
           <h3>CSS Grid</h3>
 
           <ul>
-            <li> w przypadku grida, numeracja zaczyna sie od 1 a nie od zera</li>
-            <li>grid line - przebiega przez całość grida </li>
+            <li>w przypadku grida, numeracja zaczyna sie od 1 a nie od zera</li>
+            <li>grid line - przebiega przez całość grida</li>
             <li>grid track (column)</li>
             <li>grid track (row)</li>
             <li>grid cell</li>
-            <li>grid area - składa się z kilku komórek i ma kształt prostokąta</li>
+            <li>
+              grid area - składa się z kilku komórek i ma kształt prostokąta
+            </li>
             <li>display:grid</li>
-            <li>stworzenie kolumn o szerokości 100 oraz 200 pikseli - <strong>grid-template-columns: 100px 200px;</strong></li>
-            <li>właśności grid'a odnoszą się wyłącznie do bezpośrednich dzieci - nie obsługuje zagnieżdżeń</li>
-            <li>rozmiar kolumny automatycznie dopasuje się do największego elementu grida</li>
-            <li>zdefiniowanie liczby wierszy - <strong>grid-template-rows: 100px 200px;</strong> </li>
-            <li>jednostka pozwalająca na definiowanie części - <strong>fr</strong></li>
-            <li>funkcja CSS, którą możemy zastosować do kolumn - <strong> repeat(ilerazy,wartość)</strong></li>
-            <li>przestrzeń między kolumnami grida - <strong> column-gap</strong></li>
-                        <li>przestrzeń między komórkami grida - <strong> row-gap</strong></li>
-            <li>dynamiczne ustawienie rozmiaru <strong>minmax(<min_value,max_value>)</strong></li>
+            <li>
+              stworzenie kolumn o szerokości 100 oraz 200 pikseli -
+              <strong>grid-template-columns: 100px 200px;</strong>
+            </li>
+            <li>
+              właśności grid'a odnoszą się wyłącznie do bezpośrednich dzieci -
+              nie obsługuje zagnieżdżeń
+            </li>
+            <li>
+              rozmiar kolumny automatycznie dopasuje się do największego
+              elementu grida
+            </li>
+            <li>
+              zdefiniowanie liczby wierszy -
+              <strong>grid-template-rows: 100px 200px;</strong>
+            </li>
+            <li>
+              jednostka pozwalająca na definiowanie części - <strong>fr</strong>
+            </li>
+            <li>
+              funkcja CSS, którą możemy zastosować do kolumn -
+              <strong> repeat(ilerazy,wartość)</strong>
+            </li>
+            <li>
+              przestrzeń między kolumnami grida - <strong> column-gap</strong>
+            </li>
+            <li>
+              przestrzeń między komórkami grida - <strong> row-gap</strong>
+            </li>
+            <li>
+              dynamiczne ustawienie rozmiaru
+              <strong>minmax(&lt;min_value,max_value&gt;)</strong>
+            </li>
           </ul>
         </article>
 
@@ -2349,7 +2425,10 @@ myPassword.value
 
             <li>Stworzenie nawigacji do poszczególnych tygodni</li>
 
-            <li>stworzenie pola type search z krzyżykiem do kasowania <strong> &lt; input type="search" &gt;</strong></li>
+            <li>
+              stworzenie pola type search z krzyżykiem do kasowania
+              <strong> &lt; input type="search" &gt;</strong>
+            </li>
           </ul>
         </article>
       </section>

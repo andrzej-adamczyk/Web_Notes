@@ -267,6 +267,9 @@ ol {
 
 .form {
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .form__item {
