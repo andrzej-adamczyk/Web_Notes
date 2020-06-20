@@ -2304,7 +2304,8 @@ myPassword.value
             </li>
             <li>
               właśności grid'a odnoszą się wyłącznie do bezpośrednich dzieci -
-              nie obsługuje zagnieżdżeń
+              nie obsługuje zagnieżdżeń (ale jest w planach rozszerzenie tej
+              funkcjonalności na dzagnieżdżone elementy)
             </li>
             <li>
               rozmiar kolumny automatycznie dopasuje się do największego
@@ -2331,6 +2332,9 @@ myPassword.value
               dynamiczne ustawienie rozmiaru
               <strong>minmax(&lt;min_value,max_value&gt;)</strong>
             </li>
+            <li>
+              <a href="/sources/grid/grid.html">Przykład działania grida </a>
+            </li>
           </ul>
         </article>
 
@@ -2338,13 +2342,45 @@ myPassword.value
           <h3>CSS: Grid – podstawowy layout</h3>
 
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li><strong>&lt;aside&gt;</strong> - treść poboczna</li>
+            <li>
+              <strong>grid-template-areas: "wartość1" "wartość2"</strong> -
+              rozmieszczenie elementów
+
+              <ul>
+                <li>"header header"</li>
+                <li>"article aside"</li>
+                <li>"footer footer"</li>
+              </ul>
+            </li>
+            <li>grid-area:&lt;nazwa elementu - np.article&gt;</li>
+            <li>grid-column-start: &lt;numer/[nazwa]/span(numer) &gt;</li>
+            <li>grid-column-end: &lt;numer/[nazwa]/span(numer) &gt;</li>
+            <li>grid-row-start: &lt;numer/[nazwa]/span(numer) &gt;</li>
+            <li>grid-row-end: &lt;numer/[nazwa]/span(numer) &gt;</li>
+            <li>
+              zapis skrócony - grid-area: row-start / row-end / column-start /
+              column-end
+            </li>
+            <li>
+              zapis skrócony - grid-column: column-start / column-end
+            </li>
+
+            <li>
+              zapis skrócony - grid-row: row-start / row-end /
+            </li>
+            <li>
+              grid nie zastępuje flexboxa - ale super się uzupełniają
+              <ul>
+                <li>
+                  grid - budowa całych layoutow (wierszy, kolumn)
+                </li>
+                <li>
+                  flexbox - pozycjonowanie elementów (centrowanie) wewnątrz
+                  elementu do konkretnej treści
+                </li>
+              </ul>
+            </li>
           </ul>
         </article>
 

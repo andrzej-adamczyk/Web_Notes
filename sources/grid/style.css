@@ -17,5 +17,34 @@ body {
   color: rebeccapurple;
 }
 
-.grid__element--6 {
+main {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "article .  aside"
+    "footer footer footer";
+  grid-template-columns: [pierwsza] 1fr [druga] 64px [trzecia] 200px;
+  column-gap: 16px;
+  row-gap: 16px;
+  grid-template-rows: 100px;
+}
+
+.header {
+  background: hotpink;
+  grid-column-start: pierwsza;
+  grid-column-end: span 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.article {
+  grid-area: article;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.footer {
+  grid-area: footer;
 }
