@@ -20,10 +20,11 @@ body {
 main {
   display: grid;
   grid-template-areas:
-    "header header header"
-    "article .  aside"
+    "header header header "
+    "article  . aside"
     "footer footer footer";
-  grid-template-columns: [pierwsza] 1fr [druga] 64px [trzecia] 200px;
+  /* grid-template-columns: [pierwsza] 1fr [druga] 64px [trzecia] 200px; */
+  grid-template-columns: [pierwsza] 1fr [druga] 64px[trzecia] 200px;
   column-gap: 16px;
   row-gap: 16px;
   grid-template-rows: 100px;
@@ -31,20 +32,36 @@ main {
 
 .header {
   background: hotpink;
-  grid-column-start: pierwsza;
-  grid-column-end: span 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .article {
-  grid-area: article;
+  /* grid-area: article; */
+  background: rgb(13, 182, 224);
+
+  /* grid-row-start: 2;
+  grid-row-end: 3; 
+  grid-column-start: pierwsza;
+  grid-column-end: trzecia; */
+  grid-area: 2 / pierwsza / 3 / trzecia;
 }
 
-.aside {
+aside {
   grid-area: aside;
+  background: lightsalmon;
+  grid-row-start: 2;
+  grid-row-end: 4;
 }
 
 .footer {
   grid-area: footer;
+  background: #20b2aa;
+  grid-column: 1 / 3;
+  display: flex;
+  justify-content: center;
 }
