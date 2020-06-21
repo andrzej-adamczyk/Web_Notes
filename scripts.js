@@ -335,3 +335,12 @@ buttonToggleClass.addEventListener("click", () => {
   const heading = document.querySelector(".header__JS--hamburger");
   console.log(heading.classList.contains("JS--class-hamburger__toggle"));
 });
+
+//hamburger na stronie index.html
+
+const hamburger = document.querySelector(".hamburger--js");
+
+hamburger.addEventListener("click", () => {
+  const nav = document.querySelector(".navigation--js");
+  nav.classList.toggle("navigation--open");
+});
