@@ -50,6 +50,8 @@ a {
   position: absolute;
   top: 2px;
   right: 0px;
+  border: none;
+  background: none;
 }
 
 .header__navigation--main {
@@ -368,4 +370,14 @@ abr {
     padding: 1px;
     border-radius: 8px;
   }
+
+  .hamburger {
+    display: none;
+  }
 }
+/* 
+@media (max-width: 768px) {
+  .navigation__week {
+    display: none;
+  }
+} */
