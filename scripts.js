@@ -275,14 +275,63 @@ console.log(button);
 button.addEventListener("click", () => {
   const heading = document.querySelector(".header__JS--events");
   heading.innerHTML = "Edytowany nagłówek 'JS:Eventy'";
+  heading.classList.add("JS--class");
 });
 
 //restore
-const button_restore = document.querySelector(".action--js_restore");
+const buttonRestore = document.querySelector(".action--js_restore");
 
-console.log(button_restore);
+const originalString = document.getElementsByClassName("header__JS--events")[0]
+  .innerHTML;
 
-button_restore.addEventListener("click", () => {
+console.log(originalString);
+
+console.log(buttonRestore);
+
+buttonRestore.addEventListener("click", () => {
   const heading = document.querySelector(".header__JS--events");
-  heading.innerHTML = heading;
+  heading.innerHTML = originalString;
+  // heading.innerHTML = document.getElementsByClassName("header__JS--events")[0]
+  // .innerHTML
+  heading.classList.remove("JS--class");
+});
+
+//Hamburger
+
+//dodaj klasę
+
+const buttonAddClass = document.querySelector(".action--js__addClass");
+
+buttonAddClass.addEventListener("click", () => {
+  const heading_hamburger = document.querySelector(".header__JS--hamburger");
+  heading_hamburger.classList.add("JS--class-hamburger");
+});
+
+//usuń klasę
+
+const buttonRemoveClass = document.querySelector(".action--js__removeClass");
+
+buttonRemoveClass.addEventListener("click", () => {
+  const heading = document.querySelector(".header__JS--hamburger");
+  heading.classList.remove("JS--class-hamburger");
+});
+
+//zmień klasę
+
+const buttonToggleClass = document.querySelector(".action--js__toggleClass");
+
+buttonToggleClass.addEventListener("click", () => {
+  const heading = document.querySelector(".header__JS--hamburger");
+  heading.classList.toggle("JS--class-hamburger__toggle");
+});
+
+//sprawdź klasę
+
+const buttonContainsClass = document.querySelector(
+  ".action--js__containsClass"
+);
+
+buttonToggleClass.addEventListener("click", () => {
+  const heading = document.querySelector(".header__JS--hamburger");
+  console.log(heading.classList.contains("JS--class-hamburger__toggle"));
 });

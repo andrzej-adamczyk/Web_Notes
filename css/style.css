@@ -284,3 +284,17 @@ ol {
 abr {
   font-weight: bold;
 }
+
+.JS--class {
+  background-color: hotpink;
+}
+
+.JS--class-hamburger {
+  color: hotpink;
+  background-color: rgb(0, 0, 0);
+}
+
+.JS--class-hamburger__toggle {
+  color: white;
+  background-color: rgb(0, 0, 0);
+}

@@ -2488,12 +2488,54 @@ element.addEventListener('click', (e) => {
         </article>
 
         <article class="lesson">
-          <h3>Hamburger menu</h3>
+          <h3 class="header__JS--hamburger">Hamburger menu</h3>
 
           <ul>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Hamburger - 3 poziome linie równoległe do siebie</li>
+            <li>
+              Do stworzenia hamburger menu potrzeba:
+
+              <ol>
+                <li>nawigacji</li>
+                <li>styli do nawigacji na mobile</li>
+                <li>styli do nawigacji na desktop</li>
+                <li>przycisku do pokazywania/ukrywania (zmiany klasy)</li>
+                <li>kodu JS do podpięcia się pod przycisk</li>
+                <li>kodu JS do zmiany klasy</li>
+              </ol>
+            </li>
+
+            <li>
+              element.classList.
+
+              <ul>
+                <li>
+                  add('nazwaKlasy') - w ten sposób dodajemy nazwę klasy do
+                  elementu
+                </li>
+                <li>remove('nazwaKlasy') - w ten sposób usuwamy nazwę klasy</li>
+                <li>
+                  toggle('nazwaKlasy') - jeśli klasa istnieje, to ją usuwa, a
+                  jeśli nie istnieje to ją dodaje
+                </li>
+                <li>
+                  contains('nazwaKlasy') - sprawdza czy element posiada daną
+                  klasę
+                  <ul>
+                    <li>
+                      console.log(element.classList.contains('nazwaKlasy'));
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <button class="action--js__addClass">dodaj klasę</button>
+            <button class="action--js__removeClass">usuń klasę</button>
+            <button class="action--js__toggleClass">zmień klasę</button>
+            <button class="action--js__containsClass">
+              sprawdź czy element posiada daną klasę
+            </button>
             <li></li>
             <li></li>
             <li></li>
@@ -2561,6 +2603,17 @@ element.addEventListener('click', (e) => {
             </li>
             <li>
               użycie &lt;abr title=""&gt; do stworzenie skrótu z rozwinięciem
+            </li>
+
+            <li>
+              "Dobranie się" do stringa znajdującego się pod elementem
+              posiadającym daną klasę
+
+              <p>
+                <code>
+                  document.getElementsByClassName("className")[0].innerHTML;
+                </code>
+              </p>
             </li>
           </ul>
         </article>
