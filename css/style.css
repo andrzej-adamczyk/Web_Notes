@@ -38,6 +38,7 @@ a {
 /* ↓ nawigacja główna↓	*/
 
 .navigation__main {
+  padding: 16px;
   /* list-style-type: none;
   display: flex;
   justify-content: center;
@@ -53,7 +54,9 @@ a {
 
 .navigation__main__link {
   /* display: inline-block; */
-  margin-left: 10px;
+  display: block;
+  /* margin-left: 10px; */
+  margin: 0 0 16px;
   color: white;
   background-color: rgba(234, 233, 240, 0.5);
   font-size: x-large;
@@ -67,21 +70,27 @@ a {
 /* ↓ nawigacja pomiędzy tygodniami  */
 
 .navigation__week {
-  list-style-type: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+  grid-column: 1/110;
 
+  list-style-type: none;
+  /* display: flex; */
+  /* 
   justify-content: center;
 
-  flex-wrap: nowrap;
+  flex-wrap: nowrap; */
 
   background-color: black;
 
   /* text-align: center; */
-  position: fixed;
+  /* position: fixed; */
 
-  top: 0;
+  /* top: 1;
   left: 0;
   right: 0;
+  bottom: 10; */
   padding: 1px;
   border-radius: 8px;
   margin-top: 5vh;
@@ -98,7 +107,7 @@ a {
   background-color: rgba(255, 255, 255, 0.5);
   font-size: x-large;
   text-decoration: none;
-  width: 7%;
+  width: 100%;
   text-align: center;
 
   align-self: center;
@@ -310,8 +319,8 @@ abr {
 @media (min-width: 768px) {
   .navigation__main {
     list-style-type: none;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
 
     background-color: rgba(234, 233, 240, 0.3);
     width: 100vw;
