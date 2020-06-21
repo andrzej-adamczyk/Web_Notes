@@ -296,7 +296,7 @@ buttonRestore.addEventListener("click", () => {
   heading.classList.remove("JS--class");
 });
 
-//Hamburger
+//Hamburger_lekcja
 
 //dodaj klasę
 
@@ -338,9 +338,18 @@ buttonToggleClass.addEventListener("click", () => {
 
 //hamburger na stronie index.html
 
-const hamburger = document.querySelector(".hamburger--js");
+const hamburger_main = document.querySelector(".hamburger--js");
 
-hamburger.addEventListener("click", () => {
+hamburger_main.addEventListener("click", () => {
   const nav = document.querySelector(".navigation--js");
   nav.classList.toggle("navigation--open");
+});
+
+//hamburger na stronie linki.html
+
+const hamburger_linki = document.querySelector(".hamburger--js__linki");
+
+hamburger_linki.addEventListener("click", () => {
+  const nav_linki = document.querySelector(".navigation--js__linki");
+  nav_linki.classList.toggle("navigation--open__linki");
 });

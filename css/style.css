@@ -46,17 +46,21 @@ a {
 
 .hamburger {
   position: absolute;
-  top: 2px;
+  top: 60px;
   right: 0px;
   border: none;
   background: none;
 }
 
 .header__navigation--main {
-  min-height: 60px;
+  min-height: 10px;
   position: fixed;
-  top: 0;
+  top:0;
+  /* top:0; */
+  margin-top: 200px;
+
   width: 100%;
+
  
 }
 
@@ -74,11 +78,17 @@ a {
   border-radius: 8px; */
   /* text-align: center;  //zastąpione flexboxem */
   /* position: fixed;  //zastąpione flexboxem*/
+  
 }
 
 .navigation--open {
   display: block;
 }
+
+.navigation--open__linki {
+  display: block;
+}
+
 
 .navigation__main__link {
   /* display: inline-block; */
@@ -89,6 +99,7 @@ a {
   background-color: rgba(234, 233, 240, 0.7);
   font-size: x-large;
   text-decoration: none;
+
 }
 
 .navigation__main__link--homepage {
@@ -98,9 +109,11 @@ a {
 /* ↓ nawigacja pomiędzy tygodniami  */
 
 .header__navigation--weeks {
-  min-height: 70px;
+  max-height: 10px;
   position: fixed;
-  top: 15;
+  /* top:80px; */
+  top:0;
+  /* bottom: 300px; */
   width: 100%;
 }
 
@@ -129,8 +142,8 @@ a {
   bottom: 10;  */
   padding: 1px;
   border-radius: 8px;
-  margin-top: 3vh;
-  margin-bottom: 10%;
+
+  margin-bottom: 1%;
   min-height: 10%;
 
   z-index: 1;
@@ -156,9 +169,9 @@ h1 {
   text-decoration: dotted;
   text-shadow: aqua;
   text-align: center;
-  position: relative;
-  top: 1px;
-  margin-top: 120px;
+  /* position: relative;
+  top: 10px; */
+  margin-top: 130px;
   margin-bottom: 10px;
   padding-top: 5px;
   display: flex;
@@ -368,10 +381,13 @@ abr {
     background-color: rgba(234, 233, 240, 0.3);
     width: 100vw;
     /* text-align: center; */
-    /* position: fixed; */
-    top: 0;
+    position: fixed;
+    top: 60px;
     padding: 1px;
     border-radius: 8px;
+    margin-bottom: 300px;
+    min-height: 60px;
+    
   }
 
   .hamburger {
@@ -380,15 +396,15 @@ abr {
 
   /* .navigation__main__link {
     /* display: inline-block; */
-    display: block;
+    /* display: block; */
     /* margin-left: 10px; */
-    margin: 0 5px 16px;
-    color: white;
+    /* margin: 0 5px 16px; */
+    /* color: white;
     background-color: rgba(234, 233, 240, 0.7);
     font-size: x-large;
     text-decoration: none;
   } */
-}
+/* } */ */
 /* 
 @media (max-width: 768px) {
   .navigation__week {
