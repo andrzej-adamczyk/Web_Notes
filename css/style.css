@@ -42,9 +42,7 @@ a {
 
 /* ↓ nawigacja główna↓	*/
 
-.navigation--open {
-  display: block;
-}
+
 
 .hamburger {
   position: absolute;
@@ -59,6 +57,7 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
+ 
 }
 
 .navigation__main {
@@ -75,6 +74,10 @@ a {
   border-radius: 8px; */
   /* text-align: center;  //zastąpione flexboxem */
   /* position: fixed;  //zastąpione flexboxem*/
+}
+
+.navigation--open {
+  display: block;
 }
 
 .navigation__main__link {
@@ -97,7 +100,7 @@ a {
 .header__navigation--weeks {
   min-height: 70px;
   position: fixed;
-  top: 0;
+  top: 15;
   width: 100%;
 }
 
@@ -374,6 +377,17 @@ abr {
   .hamburger {
     display: none;
   }
+
+  /* .navigation__main__link {
+    /* display: inline-block; */
+    display: block;
+    /* margin-left: 10px; */
+    margin: 0 5px 16px;
+    color: white;
+    background-color: rgba(234, 233, 240, 0.7);
+    font-size: x-large;
+    text-decoration: none;
+  } */
 }
 /* 
 @media (max-width: 768px) {

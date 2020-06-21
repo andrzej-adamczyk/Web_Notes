@@ -12,31 +12,27 @@
   <body class="body">
     <header class="header__navigation--main">
       <button class="hamburger hamburger--js" aria-label="Otwórz menu">
-        <nav class="navigation__main navigation--js">
-          <a
-            class="navigation__main__link navigation__main__link--homepage"
-            href="index.html"
-            target="_self"
-          >
-            Strona główna
-          </a>
-          <a class="navigation__main__link" href="linki.html" target="_self">
-            Linki
-          </a>
-
-          <a
-            class="navigation__main__link"
-            href="https://www.facebook.com/4Eyed"
-          >
-            Mój FB
-          </a>
-        </nav>
-
         🍔
       </button>
-      <!-- </header>
+      <nav class="navigation__main navigation--js">
+        <a
+          class="navigation__main__link navigation__main__link--homepage"
+          href="index.html"
+          target="_self"
+        >
+          Strona główna
+        </a>
+        <a class="navigation__main__link" href="linki.html" target="_self">
+          Linki
+        </a>
 
-    <header class="header__navigation--weeks"> -->
+        <a class="navigation__main__link" href="https://www.facebook.com/4Eyed">
+          Mój FB
+        </a>
+      </nav>
+    </header>
+
+    <!-- <header class="header__navigation--weeks">
       <nav class="navigation__week">
         <a class="navigation__week__link" href="#week1" target="_self">
           Tydzień 1
@@ -90,7 +86,7 @@
           Tydzień 13
         </a>
       </nav>
-    </header>
+    </header> -->
 
     <main class="main">
       <header>
@@ -2623,6 +2619,40 @@ element.addEventListener('click', (e) => {
                   document.getElementsByClassName("className")[0].innerHTML;
                 </code>
               </p>
+            </li>
+
+            <li>
+              stworzenie hamburger menu i pamiętanie o specyficzności w CSS -
+              klasa .navigation--open musi być pod klasą .navigation__main, żeby
+              menu zadziałało!
+            </li>
+            <li>
+              <pre>
+
+.navigation__main {
+  padding: 16px;
+  display: none;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: rgba(234, 233, 240, 0.3);
+  width: 100vw;
+  top: 0;
+  padding: 1px;
+  border-radius: 8px; */
+  /* text-align: center;  //zastąpione flexboxem */
+  /* position: fixed;  //zastąpione flexboxem*/
+}
+
+.navigation--open {
+  display: block;
+}
+
+
+
+</pre
+              >
             </li>
           </ul>
         </article>
