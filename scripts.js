@@ -347,9 +347,9 @@ hamburger_main.addEventListener("click", () => {
 
 //hamburger na stronie linki.html
 
-const hamburger_linki = document.querySelector(".hamburger--js__linki");
+// const hamburger_linki = document.querySelector(".hamburger--js_");
 
-hamburger_linki.addEventListener("click", () => {
-  const nav_linki = document.querySelector(".navigation--js__linki");
-  nav_linki.classList.toggle("navigation--open__linki");
-});
+// hamburger_linki.addEventListener("click", () => {
+//   const nav_linki = document.querySelector(".navigation--js");
+//   nav_linki.classList.toggle("navigation--open");
+// });

@@ -10,7 +10,7 @@ html {
 
 .main {
   max-width: 1000px;
-  margin: 10px auto;
+  margin: 200px auto;
 }
 
 .body {
@@ -404,10 +404,11 @@ abr {
     font-size: x-large;
     text-decoration: none;
   } */
-/* } */ */
+
+}
 /* 
 @media (max-width: 768px) {
   .navigation__week {
     display: none;
   }
-} */
+} 
