@@ -290,6 +290,10 @@ h3 {
   background-color: #9666e4;
 }
 
+.lesson:hover {
+  background-color: #8968be;
+}
+
 .lesson__list {
   list-style-type: disc;
 }
@@ -319,6 +323,10 @@ h3 {
   background-color: #347fc4;
 }
 
+.achievements:hover {
+  background-color: #4c88c0;
+}
+
 .achievements__list {
   list-style-type: square;
 }
@@ -332,6 +340,10 @@ h3 {
 
 .homework {
   background-color: #137a99;
+}
+
+.homework:hover {
+  background-color: #4f8c9e;
 }
 
 .homework__list {
