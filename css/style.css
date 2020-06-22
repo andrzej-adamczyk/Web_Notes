@@ -86,7 +86,7 @@ a {
 }
 
 .navigation__main {
-  padding: 16px;
+  padding: 18px;
   display: none;
   /* list-style-type: none;
   display: flex;
@@ -116,7 +116,7 @@ a {
   /* margin-left: 10px; */
   margin: 0 5px 16px;
   color: white;
-  background-color: rgba(234, 233, 240, 0.7);
+  background-color: rgba(234, 233, 240, 0.5);
   font-size: x-large;
   text-decoration: none;
 }
@@ -213,7 +213,7 @@ h3 {
   background-color: rgba(255, 255, 255, 0.05);
   color: whitesmoke;
   text-align: center;
-  position: sticky;
+  /* position: sticky; */
   top: 10%;
 }
 
@@ -416,7 +416,7 @@ abr {
     padding: 1px;
     border-radius: 8px;
     margin-bottom: 300px;
-    min-height: 60px;
+    min-height: 55px;
   }
 
   .hamburger {
@@ -471,4 +471,12 @@ abr {
     font-size: x-large;
     text-decoration: none;
   } */
+
+  h3 {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: whitesmoke;
+    text-align: center;
+    position: sticky;
+    top: 10%;
+  }
 }
