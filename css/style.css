@@ -10,12 +10,12 @@ html {
 
 .main {
   max-width: 1000px;
-  margin: 200px auto;
+  margin: 140px auto;
 }
 
 .main__linki {
   max-width: 1000px;
-  margin: 200px auto;
+  margin: 10px auto;
 }
 
 
@@ -74,7 +74,7 @@ a {
   position: fixed;
   top:0;
   /* top:0; */
-  margin-top: 10px;
+  margin-top: 150px;
 
   width: 100%;
 
@@ -87,7 +87,7 @@ a {
   position: fixed;
   top:0;
   /* top:0; */
-  margin-top: 200px;
+  margin-top: 15px;
 
   width: 100%;
 
