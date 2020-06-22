@@ -130,6 +130,10 @@ a {
   /* text-align: center;  //zastąpione flexboxem */
   /* position: fixed;  //zastąpione flexboxem*/
 }
+/* 
+.navigation__week:last-child {
+  color: red;
+} */
 
 .navigation--open {
   display: block;
@@ -149,6 +153,10 @@ a {
   background-color: rgba(234, 233, 240, 0.5);
   font-size: x-large;
   text-decoration: none;
+}
+
+.navigation__main__link:hover {
+  background-color: rgba(34, 117, 185, 0.5);
 }
 
 .navigation__main__link--homepage {
@@ -215,7 +223,7 @@ a {
 }
 
 .navigation__week__link:hover {
-  color: hotpink;
+  color: rgb(57, 170, 223);
 }
 
 /* ↓ nagłówki ↓	 */
@@ -282,6 +290,10 @@ h3 {
 .links-style a {
   color: yellow;
   font-weight: bold;
+}
+
+.useful__links:visited {
+  color: rgba(234, 233, 240, 1);
 }
 
 /* ↓"Rzeczy których się nauczyłem"↓	 */
@@ -536,7 +548,11 @@ abr {
   }
 
   .navigation__week__link:hover {
-    color: hotpink;
+    color: rgb(115, 70, 158);
+  }
+
+  input:focus {
+    background: yellow;
   }
 }
 
