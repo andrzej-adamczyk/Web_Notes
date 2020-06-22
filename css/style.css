@@ -480,3 +480,13 @@ abr {
     top: 10%;
   }
 }
+
+.pseudo::before {
+  content: "NOWE ";
+  color: rgb(219, 219, 219);
+}
+
+.pseudo::after {
+  content: " - PO ZMIANIE ";
+  color: rgb(219, 219, 219);
+}
