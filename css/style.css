@@ -214,6 +214,10 @@ a {
   z-index: 2;
 }
 
+.navigation__week__link:hover {
+  color: hotpink;
+}
+
 /* ↓ nagłówki ↓	 */
 
 .h1 {
@@ -517,6 +521,10 @@ abr {
 
   .h1::after {
     content: none;
+  }
+
+  .navigation__week__link:hover {
+    color: hotpink;
   }
 }
 
