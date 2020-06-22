@@ -46,7 +46,7 @@ a {
 
 .hamburger {
   position: absolute;
-  top: 60px;
+  top: 130px;
   right: 0px;
   border: none;
   background: none;
@@ -123,10 +123,12 @@ a {
 
 .navigation__week {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
   /* grid-column: 1 / span 3;
   grid-row: 2 / span 2; */
+  row-gap: 5px;
+  column-gap: 5px;
 
   list-style-type: none;
   /* display: flex; */
@@ -407,6 +409,8 @@ abr {
   /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
   /* grid-column: 1 / span 3;
   grid-row: 2 / span 2; */
+  row-gap: 10px;
+  column-gap: 10px;
 
   list-style-type: none;
   /* display: flex; */
