@@ -479,6 +479,11 @@ abr {
     position: sticky;
     top: 10%;
   }
+
+  .main {
+    max-width: 1000px;
+    margin: 5px auto;
+  }
 }
 
 .pseudo::before {
