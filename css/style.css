@@ -86,7 +86,10 @@ a {
 }
 
 .navigation--open__linki {
-  display: block;
+ 
+  top: 0;
+  display: inline-block;
+ 
 }
 
 
