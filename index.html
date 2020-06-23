@@ -58,7 +58,7 @@
           Tydzień 6
         </a>
 
-        <a class="navigation__week__link" href="#week7" target="_self">
+        <a class="navigation__week__link navigation__week__link--lucky" href="#week7" target="_self">
           Tydzień 7
         </a>
 
@@ -2733,9 +2733,18 @@ Brawo Andrzej - udało Ci się rozwiązać zadanie :tada:
                   :focus - zmiana wyglądu elementów, które są w danym momencie
                   aktywne - np. inputy
                 </li>
-                <li>:first-child - pierwszy element rodzica</li>
-                <li>:last-child - ostatni element rodzica</li>
-                <li>:not(selektor)</li>
+                <li>
+                  :first-child - definiujemy na podstawie klasy przypisanej do
+                  kilku elementów html - zostanie wybrany pierwszy z nich
+                </li>
+                <li>
+                  :last-child - definiujemy na podstawie klasy przypisanej do
+                  kilku elementów html - zostanie wybrany ostatni z nich
+                </li>
+                <li>
+                  :not(selektor--modyfikator) - stosuje własność do wszystkich
+                  elementów, które nie posiadają modyfikatora
+                </li>
               </ul>
             </li>
           </ul>

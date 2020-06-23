@@ -115,6 +115,10 @@ a {
   width: 100%;
 }
 
+/* .navigation__main__link:not(.navigation__main__link--homepage) {
+  background: hotpink;
+} */
+
 .navigation__main {
   padding: 18px;
   display: none;
@@ -548,11 +552,23 @@ abr {
   }
 
   .navigation__week__link:hover {
-    color: rgb(115, 70, 158);
+    color: hotpink;
   }
 
   input:focus {
     background: yellow;
+  }
+
+  .navigation__main__link:first-child {
+    background-color: rgba(214, 226, 39, 0.3);
+  }
+
+  .navigation__main__link:last-child {
+    background-color: rgba(224, 26, 125, 0.3);
+  }
+
+  .navigation__week__link:not(.navigation__week__link--lucky) {
+    background: rgb(83, 85, 76);
   }
 }
 
