@@ -2649,8 +2649,7 @@ Brawo Andrzej - udało Ci się rozwiązać zadanie :tada:
               menu zadziałało!
             </li>
 
-            <li>
-              <pre>
+            <pre>
 
 .navigation__main {
   padding: 16px;
@@ -2675,8 +2674,7 @@ Brawo Andrzej - udało Ci się rozwiązać zadanie :tada:
 
 
 </pre
-              >
-            </li>
+            >
 
             <li>
               użycie komendy - git pull origin w celu naprawienia błędu "error:
@@ -2780,11 +2778,169 @@ Brawo Andrzej - udało Ci się rozwiązać zadanie :tada:
         </article>
 
         <article class="lesson">
-          <h3>Nowe rzeczy, których się nauczyłem:</h3>
+          <h3>NPM oraz NPX</h3>
 
           <ul>
-            <li></li>
+            <li>NPM =/= node package manager (chociaż spełnia taką funkcję)</li>
 
+            <li>
+              z NPM możemy ściągać paczki i programy, które pozwalają na
+              budowanie naszego projektu
+            </li>
+            <li>
+              Dzięki paczkom:
+              <ul>
+                <li>dodajemy do projektów sporo gotowych bibliotek/narzędzi</li>
+                <li>mamy uniwersalne źródło ze wszystkimi narzędziami</li>
+                <li>mamy dostęp do aktualizacji/poprawek</li>
+                <li>
+                  nie musimy polegać na konfiguracji edytora i jego wtyczkach
+                  (np. Live Server)
+                </li>
+              </ul>
+            </li>
+            <li>
+              NPM można porównać do Appstore/Google Play, tylko że dla
+              frontendowca
+            </li>
+            <li>
+              NPM to skrzynka z narzędziami, których możemy użyć w naszym
+              projekcie
+            </li>
+            <li>
+              Plik normalize.css, który ściągaliśmy ręcznie jest również
+              dostępny w NPM!
+            </li>
+            <li>
+              Pierwsze polecenie (użyte tylko raz)
+
+              <ul>
+                <li>
+                  npm init (możliwość podania odpowiedzi na pytania co do
+                  naszego projektu)
+                </li>
+                <li>npm init-y (nie zawiera dodatkowych pytań)</li>
+              </ul>
+
+              - / npm init-y
+            </li>
+            <li>
+              Po jego zastosowaniu stworzy się plik package.json mający
+              strukturę obiektu zawierający informacje na temat naszego projektu
+            </li>
+
+            <li>
+              Instalacja paczki
+
+              <ul>
+                <li>
+                  - npm install &lt;nazwa_paczki&gt; --save (gdy będziemy
+                  stosować paczkę w przeglądarce)
+                </li>
+                <li>
+                  npm install &lt;nazwa_paczki&lt; --save-dev (gdy będziemy
+                  używać narzędzia do rozwoju naszego projektu)
+                </li>
+
+                <li>
+                  - npm install &lt;nazwa_paczki&gt; react (instalacja reacta w
+                  node_modules)
+                </li>
+
+                <li>
+                  - npm install (automatyczna instalacji paczek potrzebnych w
+                  naszym projekcie - zdefiniowanych w pliku package.json)
+                </li>
+              </ul>
+            </li>
+            <li>
+              Instalacja paczki normalize.css
+              <ul>
+                <li>
+                  Idź do
+                  <a href="https://www.npmjs.com/package/normalize.css"
+                    >linku
+                  </a>
+                  ,skopiuj polecenie
+                  <code>npm install --save normalize.csss </code>
+                  oraz wklej je do wiersza poleceń (uruchomionego w folderze
+                  Twojego projektu node)
+                </li>
+                <li>
+                  możesz dostać następujący warning - bo w pierwszym poleceniu
+                  nie uzupełniliśmy informacji na temat repozytorium
+                </li>
+
+                <pre>
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN node_playground@1.0.0 No repository field.
+
++ normalize.css@8.0.1
+added 1 package and audited 1 package in 0.868s
+found 0 vulnerabilities
+</pre
+                >
+
+                <li>
+                  nazwa pliku normalize.css zostanie dodana do sekcji
+                  "dependencies" w naszym pliku package.json
+                </li>
+              </ul>
+            </li>
+            <li>
+              pojawi się także nowy plik - package-lock.json, który przechowuje
+              informacje o tym, co zainstalowaliśmy
+
+              <ul>
+                <li>jest nieedytowalny</li>
+                <li>służy do tego, żeby zależności się nie rozjeżdżały</li>
+                <li>"blokuje wersje"</li>
+              </ul>
+            </li>
+            <li>
+              pojawia się także katalog o nazwie node_modules zawierający
+              podkatalog normalize.css, w którym znajdują się:
+
+              <ul>
+                <li>normalize.css</li>
+                <li>
+                  package.json - większy od tego, który znajduje się w naszym
+                  projekcie
+                </li>
+              </ul>
+            </li>
+            <li>
+              node_modules zajmuje do kilku gb miejsca na dysku, w zależności od
+              ilości paczek
+            </li>
+            <li>NIE COMMITUJEMY node_modules - dodajemy go do .gitignore</li>
+            <li>
+              NIE WPROWADZAMY ZMIAN w plikach znajdujących się w node_modules
+            </li>
+
+            <li>
+              Alternatywą dla NPM jest <a href="https://yarnpkg.com/">YARN</a>,
+              który korzysta z tej samej bazy co NPM
+            </li>
+
+            <li>
+              npx cowsay &lt; your_input &gt; - narzędzie konsolowe bez
+              konieczności instalacji
+            </li>
+            <pre>
+ _______
+&lt;Siema&gt;
+ -------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+
+</pre
+            >
+
+            <li>npx install cowsay --save-dev</li>
             <li></li>
           </ul>
         </article>
