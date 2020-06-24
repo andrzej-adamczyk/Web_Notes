@@ -2922,10 +2922,13 @@ found 0 vulnerabilities
               Alternatywą dla NPM jest <a href="https://yarnpkg.com/">YARN</a>,
               który korzysta z tej samej bazy co NPM
             </li>
+            <li>
+              npx - w przeciwieństwie do npm ta komenda pozwala na wywoływanie
+              paczek bez konieczności instalacji
+            </li>
 
             <li>
-              npx cowsay &lt; your_input &gt; - narzędzie konsolowe bez
-              konieczności instalacji
+              npx cowsay &lt; your_input &gt;
             </li>
             <pre>
  _______
@@ -2949,19 +2952,194 @@ found 0 vulnerabilities
           <h3>NPM Scripts</h3>
 
           <ul>
-            <li></li>
+            <li>
+              NPM scripts - komendy (skróty), które możemy zdefiniować w naszym
+              pliku package.json w naszym projekcie
+            </li>
+
+            <li>domyślnie w pliku package.json znajduje się jedna komenda:</li>
+
+            <pre>
+          
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  \\ oznacza, że testy nie zostały zdefiniowane
+
+          </pre
+            >
+            <li>
+              można użyć komend to startowania serwera, budowania aplikacji
+            </li>
+
+            <li>syntax - npm run &lt;nazwa_komendy.skrótu&gt;</li>
+
+            <li>
+              warunkiem koniecznym jest posiadanie zainstalowanej paczki w
+              node_modules
+            </li>
+          </ul>
+        </article>
+
+        <article class="lesson">
+          <h3>SASS/SCSS</h3>
+
+          <ul>
+            <li>
+              Problemy z CSS
+
+              <ul>
+                <li>porozrzucane klasy (bałagan w plikach)</li>
+                <li>
+                  @media oddzielone od elementu (konieczność ponownego
+                  definiowania)
+                </li>
+                <li>
+                  kiepska czytelność plików (zwłaszcza przy zagnieżdżeniach)
+                </li>
+                <li>
+                  brak możliwości definiowania funkcji do robienia podobnych
+                  rzeczy
+                </li>
+              </ul>
+            </li>
+            <li>
+              SASS - preprocesor CSS, który zamienia swoją składnię, swój kod na
+              CSS-a rozumianego przez przeglądarkę
+            </li>
+            <li>
+              SASS potrzebuje narzędzia do działania(ale nie będziemy instalować
+              rozszerzeń w Visual Studio Code)
+            </li>
+            <li>SASS - podobny do Pythona (używa wcięć)</li>
+            <li>SCSS</li>
+            <li>
+              Pliki .scss są dla programisty -> narzędzie SASS zamienia je na
+              pliki .css zrozumiałe dla przeglądarki
+            </li>
+            <li>
+              $zmienna:<i>definicjaZmiennej</i> - można za jej pomocą definiować
+              breakpointy w media queries
+            </li>
+            <li>@mixin - pozwala na definiowanie zestawu styli np.</li>
+
+            <pre>
+<strong>@mixin</strong> borderBackground {
+  
+  border-radius:10px;
+  background:pink;
+  
+}
+</pre>
+
+            <li>
+              <strong> @include </strong> - pozwala na dołączenie zestawu styli:
+              np.<code>
+                @include borderBackground;
+              </code>
+            </li>
+
+            <li>
+              przykład pokazujący na zastosowanie $zmiennych, @mixin oraz
+              @include
+            </li>
+            <pre>
+
+//Sass
+
+@mixin borderBackgroundParameter ($radius, $background)
+
+{
+    border-radius:$radius;
+  background:$background;
+}
+
+//CSS
+
+@include borderBackgroundParameter(11px,red);
+
+</pre
+            >
+
+            <li>
+              <strong>@extend</strong> - działa podobnie jak
+              <strong>@include </strong>, ale znajduje wspólne style i dopisuje
+              nazwe klasy do właściwości, które zostały już zdefiniowane - np.
+              <strong>@extend .font-style</strong>
+            </li>
+            <li>&parentSelector - może być użyty do budowy struktury BEM</li>
+
+            <pre>
+// Saas
+
+.about-sass {
+  
+  color:red;
+  &__title {
+      font-size:20px;
+     &--smaller{
+    font-size:16px;
+    }
+    @media (max-width: 768px) {
+      font-size:18px;
+    }
+  }
+}
+
+// CSS
+
+.about-sass {
+  color: red;
+}
+.about-sass__title {
+  font-size: 20px;
+}
+.about-sass__title--smaller {
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .about-sass__title {
+    font-size: 18px;
+  }
+}
+</pre
+            >
 
             <li></li>
-            <li></li>
+          </ul>
+        </article>
 
-            <li></li>
+        <article class="lesson">
+          <h3>NPM Scripts</h3>
 
+          <ul>
             <li></li>
-
             <li></li>
-
             <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </article>
 
+        <article class="lesson">
+          <h3>NPM Scripts</h3>
+
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
             <li></li>
           </ul>
         </article>
