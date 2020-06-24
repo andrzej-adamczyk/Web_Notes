@@ -6,6 +6,7 @@
     <title>WTF Adept</title>
     <link rel="stylesheet" href="css/normalize.css" type="text/css" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
     <base target="_blank" />
   </head>
 
@@ -3117,14 +3118,16 @@ found 0 vulnerabilities
               Kroki instalacyjne:
 
               <ol>
-                <li>npm init -y</li>
-                <li>npm install node-sass --save-dev</li>
+                <li>stworzenie repozytorium npm w projekcie - npm init -y</li>
+                <li>
+                  zainstalowanie paczki node-sass - npm install node-sass
+                  --save-dev
+                </li>
                 <li>dodanie wpisu 'node_modules' do .gitignore</li>
                 <li>stworzenie pliku main.scss</li>
                 <li>dodanie testowych własności</li>
 
                 <pre>
-
 .test {
 
 width:200px;
@@ -3133,17 +3136,39 @@ color:blue;
 
   }
 }
-
-
 </pre
                 >
 
-                <li></li>
+                <li>
+                  transformacja pliku scss na css - npx node-sass src/style.scss
+                  dest/style.css
+                </li>
+                <li>dodanie pliku CSS po transformacji do pliku index.html</li>
+
+                <code>
+                  &lt;link href="main.css" rel="stylesheet" type"text/css" /&gt;
+                </code>
+
+                <li>
+                  komenda do monitorowania zmian w pliku .scss i automatycznej
+                  transformacji na .css - npx node-sass -w main.scss main.css
+                </li>
+                <li>
+                  dodanie komendy do monitorowania w package.json w sekcji
+                  "scripts"
+                </li>
+
+                <code> "sass": "npx node-sass -w main.scss main.css",</code>
+                <li>uruchomienie zdefiniowanej komendy - npm run sass</li>
               </ol>
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>
+              warto pamiętać, że zmiany wprowadzane w css będą nadpisywane po
+              wykonaniu komendy z punktu 6.
+            </li>
+
+            <li class="test"><span class="test__special">test</span></li>
+            <li>CTRL+C - wyjście w konsoli</li>
             <li></li>
             <li></li>
             <li></li>

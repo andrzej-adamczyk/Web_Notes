@@ -1,0 +1,9 @@
+.test {
+  color: yellow;
+  font-weight: bolder; }
+  .test__special {
+    color: white;
+    font-size: small; }
+
+.test::after {
+  content: " - element zmieniony przez plik SAAS - main.scss"; }
