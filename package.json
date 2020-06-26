@@ -1,10 +1,11 @@
 {
-  "name": "Web_Notes",
+  "name": "WebNotes",
   "version": "1.0.0",
   "description": "",
   "main": "scripts_linki.js",
   "scripts": {
     "sass": "npx node-sass -w scss/style.scss css/style.css",
+    "sass2": "npx node-sass -w E:/AA/WTF/DEV/WebNotes/scss/style.scss E:/AA/WTF/DEV/WebNotes/css/style.css ",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
