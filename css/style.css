@@ -114,11 +114,43 @@ html {
   justify-content: center;
   flex-direction: column; }
 
+/* ↓ ustawienie dziedziczenia koloru linków ↓  */
+a {
+  color: inherit; }
+
+/* ↓ nagłówki ↓	 */
+.h1 {
+  text-decoration: dotted;
+  text-shadow: aqua;
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  font-size: 20px; }
+
 /* ↓  pseudoelement odpowiedzialny za wyświetalnie informacji o wersji strony ↓  */
 .h1::after {
   content: " - wersja mobilna";
+  display: flex;
+  flex-direction: row;
   color: white;
   align-self: center; }
+
+.mobile {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-self: center; }
+
+h2 {
+  background-color: #dfdfdf;
+  color: #2d2241;
+  text-align: center;
+  display: flex;
+  justify-content: center; }
 
 /* ↓ pseudoelement odpowiedzialny za wyświetalnie kropek przed i po nagłówku z numerem tygodnia ↓ */
 h2::before {
@@ -142,30 +174,6 @@ h2::after {
   height: 12px;
   margin-left: 10px;
   margin-top: 7px; }
-
-/* ↓ ustawienie dziedziczenia koloru linków ↓  */
-a {
-  color: inherit; }
-
-/* ↓ nagłówki ↓	 */
-.h1 {
-  text-decoration: dotted;
-  text-shadow: aqua;
-  text-align: center;
-  margin-top: 140px;
-  margin-bottom: 10px;
-  padding-top: 5px;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center; }
-
-h2 {
-  background-color: #dfdfdf;
-  color: #2d2241;
-  text-align: center;
-  display: flex;
-  justify-content: center; }
 
 h3 {
   background-color: rgba(255, 255, 255, 0.05);
