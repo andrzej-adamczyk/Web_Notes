@@ -74,6 +74,13 @@ html {
 .navigation__main__link--homepage {
   font-weight: bold; }
 
+.header__navigation--main__links {
+  min-height: 10px;
+  position: fixed;
+  top: 0;
+  margin-top: 25px;
+  min-width: 100%; }
+
 /* ↓ hamburger menu↓	*/
 .hamburger {
   position: absolute;
@@ -132,13 +139,7 @@ a {
 
 /* ↓  pseudoelement odpowiedzialny za wyświetalnie informacji o wersji strony ↓  */
 .h1::after {
-  content: " - wersja mobilna";
-  display: flex;
-  flex-direction: row;
-  color: white;
-  align-self: center; }
-
-.mobile {
+  content: " wersja mobilna";
   display: flex;
   flex-direction: row;
   color: white;
