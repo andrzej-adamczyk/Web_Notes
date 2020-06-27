@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WTF Adept</title>
-    <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="css/normalize.css" type="text/css" /> -->
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <!-- <link rel="stylesheet" href="css/main.css" type="text/css" /> -->
+  
     <base target="_blank" />
   </head>
 
@@ -3237,6 +3238,121 @@ color:blue;
         <h2 id="week8">Tydzień 8</h2>
 
         <article class="lesson">
+          <h3>Import / export – koncept + import w stylach</h3>
+
+          <ul>
+            <li>
+              Świat aplikacji jest stworzony z modułów, ponieważ:
+
+              <ul>
+                <li>
+                  aplikacje rosną i trudno trzymać wszystko w jednym pliku
+                </li>
+                <li>chcemy korzystać z wybranych funkcji w różnych plikach</li>
+                <li>chcemy mieć porządek w projekcie</li>
+                <li>
+                  chcemy korzystać z kodu udostępnionego przez innych
+                  developerów (albo udostępnić swój)
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              import w (s)css - @import "źródło"
+              <ul>
+                <li>@import "modules/desktop-styles.scss";</li>
+                <li>
+                  @import
+                  "https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css";
+                </li>
+              </ul>
+            </li>
+                     </ul>
+        </article>
+
+ <article class="lesson">
+          <h3> JS: Import / Export</h3>
+
+          <ul>
+            <li>Moduły:
+            
+            <ul>
+              <li>CommonJS - wsytępuje w skryptach node</li>
+              <li>ES6 Modules - omówione w tej lekcji</li>
+            </ul>
+            
+            
+            </li>
+
+            <li>aby użyć moduły należy użyć następującego atrybutu &lt;script type="module"&gt;</li>
+
+            <li>export <strong>something</strong></li>
+            <li>import <strong>{something} </strong>from <strong>'.myscript.js'</strong></li>
+            <li>export default <strong>something</strong> - dzięki niemu nie musimy martwić się o konflikty</li>
+            <li>import <strong>nazwaRzeczy</strong> from 'nazwa-modułu'/'ścieżka/do/pliku'</li>
+             <li>import <strong>{bardzoDługaNazwa as alias}</strong> from 'nazwa-modułu'/'ścieżka/do/pliku'</li>
+             <li>import * as newName from ... - pozwala na importowanie wszystkich exportów z pliku</li>
+             <li>npm install moment - paczka służąca do operacji na datach i godzinach</li>
+        
+          </ul>
+          
+
+           <article class="lesson">
+          <h3>WTF: Webpack</h3>
+
+          <ul>
+
+            <li>Webpack
+            
+            <ul>
+              <li>podstawowe narzędzie frontendowca</li>
+              <li>może automatyzować procesy</li>
+              <li>ułatwia development</li>
+              <li>używają go wiodące frameworki i biblioteki</li>
+              <li>warto znać podstawy</li>
+            </ul>
+            
+            
+            
+            </li>
+
+
+
+
+          
+                <li>webpack konsoliduje różne pliki w jedną całość - bundle</li>
+
+                           
+                    <li>webpack działa bez pliku konfguracyjnego:
+                    <ul>
+                      <li>ma swoje domyślne entry .src/index.js</li>
+
+                      <li>ma swój domyślny output .dist/main.js</li>
+                    </ul>
+                    
+                    
+    <li> Konfiguracja                 
+
+<ol>
+
+ 
+
+
+ <li><a href="https://webpack.js.org/guides/getting-started/">Webpack</a></li></li>
+                        <li>npx webpack</li>
+<li>stworzenie katalogu src z plikiem index.js w folderze webpack_demo</li>
+<li>plik main.js w katalogu dist jest czytany przez przeglądarkę</li>
+<li></li>
+<li></li>
+<li></li>
+
+
+ </ol>                       
+          </ul>
+        </article>
+
+
+ <article class="lesson">
           <h3>Nowe rzeczy, których się nauczyłem:</h3>
 
           <ul>
@@ -3245,6 +3361,60 @@ color:blue;
             <li></li>
           </ul>
         </article>
+
+
+ <article class="lesson">
+          <h3>Nowe rzeczy, których się nauczyłem:</h3>
+
+          <ul>
+            <li></li>
+
+            <li></li>
+          </ul>
+        </article>
+
+
+ <article class="lesson">
+          <h3>Nowe rzeczy, których się nauczyłem:</h3>
+
+          <ul>
+            <li></li>
+
+            <li></li>
+          </ul>
+        </article>
+
+
+ <article class="lesson">
+          <h3>Nowe rzeczy, których się nauczyłem:</h3>
+
+          <ul>
+            <li></li>
+
+            <li></li>
+          </ul>
+        </article>
+
+
+ <article class="lesson">
+          <h3>Nowe rzeczy, których się nauczyłem:</h3>
+
+          <ul>
+            <li></li>
+
+            <li></li>
+          </ul>
+        </article>
+
+
+
+
+
+
+
+
+
+
 
         <article class="achievements">
           <h3>Achievements</h3>
@@ -3396,5 +3566,6 @@ color:blue;
     </footer>
 
     <script src="scripts/scripts.js"></script>
+    <script src="scripts/main.js" type="module"></script>
   </body>
 </html>
