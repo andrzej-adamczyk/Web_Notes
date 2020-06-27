@@ -15,7 +15,7 @@ html {
 
 .navigation__week {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   row-gap: 5px;
   column-gap: 5px;
   list-style-type: none;
@@ -111,7 +111,8 @@ html {
   background-color: #ffffff;
   display: flex;
   justify-content: center;
-  flex-direction: column; }
+  flex-direction: column;
+  max-width: 100%; }
 
 /* ↓ ustawienie dziedziczenia koloru linków ↓  */
 a {
