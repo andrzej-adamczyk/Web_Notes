@@ -223,13 +223,13 @@ a {
 }
 
 /* ↓  pseudoelement odpowiedzialny za wyświetalnie informacji o wersji strony ↓  */
-.h1::after {
-  content: " - wersja mobilna";
-  display: flex;
-  flex-direction: row;
-  color: white;
-  align-self: center;
-}
+// .h1::after {
+//   content: " - wersja mobilna";
+//   display: flex;
+//   flex-direction: row;
+//   color: white;
+//   align-self: center;
+// }
 
 .mobile {
   display: flex;
