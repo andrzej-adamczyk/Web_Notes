@@ -17,7 +17,8 @@ html {
 .header__navigation--weeks {
   position: fixed;
   top: 0;
-  width: 100%;
+  // width: 100%;
+  max-width: 100%;
   max-height: 10px;
   //  bottom: 300px;
 }
@@ -70,7 +71,7 @@ html {
   position: fixed;
   top: 0;
   margin-top: 160px;
-  width: 100%;
+  max-width: 100%;
 
   &____linki {
     min-height: 10px;
@@ -153,13 +154,14 @@ html {
 // ↓ .main ↓
 
 .main {
-  max-width: 1000px;
+  // max-width: 1000px;
+  max-width: 100%;
   margin: 150px auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   &__linki {
-    max-width: 1000px;
+    // max-width: 1000px;
     margin: 10px auto;
   }
 }
