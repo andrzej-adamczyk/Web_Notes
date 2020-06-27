@@ -72,7 +72,7 @@ html {
   position: fixed;
   top: 0;
   margin-top: 160px;
-  max-width: 100%;
+  min-width: 100%;
 
   &____linki {
     min-height: 10px;
@@ -86,9 +86,12 @@ html {
 .navigation__main {
   padding: 18px;
   display: none;
+  // max-width: 100%;
   // list-style-type: none;
   // display: flex;
   // justify-content: center;
+  // flex-direction: column;
+  // align-content: center;
   // background-color: rgba(234, 233, 240, 0.3);
   // width: 100vw;
   // top: 0;
@@ -104,6 +107,7 @@ html {
     background-color: rgba(234, 233, 240, 0.5);
     font-size: x-large;
     text-decoration: none;
+    // align-self: center;
     /* margin-left: 10px; */
     /* display: inline-block; */
   }
@@ -143,6 +147,7 @@ html {
     border: none;
     background: none;
     font-size: 25px;
+    // max-width: 100%;
   }
 }
 
