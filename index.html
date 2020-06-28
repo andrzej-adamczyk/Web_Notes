@@ -7,7 +7,7 @@
     <!-- <link rel="stylesheet" href="css/normalize.css" type="text/css" /> -->
     <link rel="stylesheet" href="css/style.css" type="text/css" />
     <!-- <link rel="stylesheet" href="css/main.css" type="text/css" /> -->
-  
+
     <base target="_blank" />
   </head>
 
@@ -3267,191 +3267,294 @@ color:blue;
                 </li>
               </ul>
             </li>
-                     </ul>
+          </ul>
         </article>
 
- <article class="lesson">
-          <h3> JS: Import / Export</h3>
+        <article class="lesson">
+          <h3>JS: Import / Export</h3>
 
           <ul>
-            <li>Moduły:
-            
-            <ul>
-              <li>CommonJS - wsytępuje w skryptach node</li>
-              <li>ES6 Modules - omówione w tej lekcji</li>
-            </ul>
-            
-            
+            <li>
+              Moduły:
+
+              <ul>
+                <li>CommonJS - wsytępuje w skryptach node</li>
+                <li>ES6 Modules - omówione w tej lekcji</li>
+              </ul>
             </li>
 
-            <li>aby użyć moduły należy użyć następującego atrybutu &lt;script type="module"&gt;</li>
+            <li>
+              aby użyć moduły należy użyć następującego atrybutu &lt;script
+              type="module"&gt;
+            </li>
 
             <li>export <strong>something</strong></li>
-            <li>import <strong>{something} </strong>from <strong>'.myscript.js'</strong></li>
-            <li>export default <strong>something</strong> - dzięki niemu nie musimy martwić się o konflikty</li>
-            <li>import <strong>nazwaRzeczy</strong> from 'nazwa-modułu'/'ścieżka/do/pliku'</li>
-             <li>import <strong>{bardzoDługaNazwa as alias}</strong> from 'nazwa-modułu'/'ścieżka/do/pliku'</li>
-             <li>import * as newName from ... - pozwala na importowanie wszystkich exportów z pliku</li>
-             <li>npm install moment - paczka służąca do operacji na datach i godzinach</li>
-        
+            <li>
+              import <strong>{something} </strong>from
+              <strong>'.myscript.js'</strong>
+            </li>
+            <li>
+              export default <strong>something</strong> - dzięki niemu nie
+              musimy martwić się o konflikty
+            </li>
+            <li>
+              import <strong>nazwaRzeczy</strong> from
+              'nazwa-modułu'/'ścieżka/do/pliku'
+            </li>
+            <li>
+              import <strong>{bardzoDługaNazwa as alias}</strong> from
+              'nazwa-modułu'/'ścieżka/do/pliku'
+            </li>
+            <li>
+              import * as newName from ... - pozwala na importowanie wszystkich
+              exportów z pliku
+            </li>
+            <li>
+              npm install moment - paczka służąca do operacji na datach i
+              godzinach
+            </li>
           </ul>
-          
-          </article>
+        </article>
 
-           <article class="lesson">
+        <article class="lesson">
           <h3>WTF: Webpack</h3>
 
           <ul>
+            <li>
+              Webpack
 
-            <li>Webpack
-            
-            <ul>
-              <li>podstawowe narzędzie frontendowca</li>
-              <li>może automatyzować procesy</li>
-              <li>ułatwia development</li>
-              <li>używają go wiodące frameworki i biblioteki</li>
-              <li>warto znać podstawy</li>
-            </ul>
-            
-            
-            
+              <ul>
+                <li>podstawowe narzędzie frontendowca</li>
+                <li>może automatyzować procesy</li>
+                <li>ułatwia development</li>
+                <li>używają go wiodące frameworki i biblioteki</li>
+                <li>warto znać podstawy</li>
+              </ul>
             </li>
 
+            <li>webpack konsoliduje różne pliki w jedną całość - bundle</li>
 
+            <li>
+              webpack działa bez pliku konfguracyjnego:
+              <ul>
+                <li>ma swoje domyślne entry .src/index.js</li>
 
+                <li>ma swój domyślny output .dist/main.js</li>
+              </ul>
+            </li>
 
-          
-                <li>webpack konsoliduje różne pliki w jedną całość - bundle</li>
+            <li>
+              Konfiguracja
 
-                           
-                    <li>webpack działa bez pliku konfguracyjnego:
-                    <ul>
-                      <li>ma swoje domyślne entry .src/index.js</li>
+              <ol>
+                <li>
+                  <a href="https://webpack.js.org/guides/getting-started/"
+                    >Webpack</a
+                  >
+                </li>
+                <li>npx webpack</li>
+                <li>
+                  stworzenie katalogu src z plikiem index.js w folderze
+                  webpack_demo
+                </li>
+                <li>
+                  plik main.js w katalogu dist jest czytany przez przeglądarkę
+                </li>
+                <li>
+                  wpisanie <strong>import moment from "moment"; </strong> w
+                  index. js
+                </li>
+                <li>npx webpack</li>
+                <li>
+                  znalezienie funkcji w
+                  <a href="https://momentjs.com/"> dokumentacji moment.js</a>
+                </li>
+                <li>
+                  wpisanie
+                  <strong
+                    >console.log(moment().format("MMMM Do YYYY, h:mm:ss a"));
+                  </strong>
+                  w index.js
+                </li>
+              </ol>
+            </li>
 
-                      <li>ma swój domyślny output .dist/main.js</li>
-                    </ul>
-                    
-                    
-    <li> Konfiguracja                 
+            <li>loader - pozwala na operacje na plikach innych niż JS</li>
 
-<ol>
+            <li>plugin - pozwala na wykonywanie różnych operacji</li>
 
- 
+            <li>
+              mode - development/production
+              <ul>
+                <li>
+                  webpack --mode development - (brak ostrzeżeń, plik main.js
+                  zawiera dodatkowe informacje, które pozwalają na łatwiejsze
+                  pisanie kodu)
+                </li>
+                <li>
+                  webpack --mode production - (wyświetlane są ostrzeżenia
+                  związane np. z wielkością plików)
+                </li>
+              </ul>
+            </li>
 
-
- <li><a href="https://webpack.js.org/guides/getting-started/">Webpack</a></li>
-                        <li>npx webpack</li>
-<li>stworzenie katalogu src z plikiem index.js w folderze webpack_demo</li>
-<li>plik main.js w katalogu dist jest czytany przez przeglądarkę</li>
-<li>wpisanie <strong>import moment from "moment"; </strong> w index. js</li>
-<li>npx webpack</li>
-<li> znalezienie funkcji w <a href="https://momentjs.com/"> dokumentacji moment.js</a></li>
-<li>wpisanie <strong>console.log(moment().format("MMMM Do YYYY, h:mm:ss a")); </strong> w index.js
-</li>
-
- </ol>  
-</li>
-
-<li>loader - pozwala na operacje na plikach innych niż JS </li>
-
-
-
-
- <li>plugin - pozwala na wykonywanie różnych operacji</li>        
-
- <li> mode - development/production
- <ul>
-   <li>webpack --mode development - (brak ostrzeżeń, plik main.js zawiera dodatkowe informacje, które pozwalają na łatwiejsze pisanie kodu)</li>
-   <li>webpack --mode production - (wyświetlane są ostrzeżenia związane np. z wielkością plików)</li>
- </ul>
- 
-  </li>  
-
-  <li>możliwości webpacka zwiększamy za pomocą paczek z NPM</li>           
+            <li>możliwości webpacka zwiększamy za pomocą paczek z NPM</li>
           </ul>
         </article>
 
-
- <article class="lesson">
+        <article class="lesson">
           <h3>WTF Webpack StarterKit – pierwsze uruchomienie</h3>
 
           <ul>
-            <li>Jest to szablon, którego możemy użyć do tworzenia swoich projektów</li>
-
-            <li> Zawiera:
-            
-            <ul>
-              <li>serwer lokalny z autoodświeżaniem</li>
-              <li>wsparcie dla scss i sourcemap</li>
-              <li>minifikacje - usuwanie zbędnych znaków z pliku w celu zmniejszenia objętości</li>
-              <li>babel - pozwala na korzystanie z najnowszych funkcji języka JS (definiowane przez ECMA_Script)</li>
-              <li>publikację na github pages</li>
-            </ul>
-            
+            <li>
+              Jest to szablon, którego możemy użyć do tworzenia swoich projektów
             </li>
 
-            <li>Dzięki niemu będziemy odchodzili od używania wtyczek, tak aby działało tak samo bez względu na konfigurację środowiska</li>
-            <li> Procedura uruchomienia StarterKit
-            <ol>
-              <li>Założenie nowego <a href="https://github.com/maciejkorsan/wtf-webpack-starter/generate"> projektu </a></li>
-              <li>git clone https://github.com/andrzej-adamczyk/webpack-test.git</li>
-              <li>npm install</li>
-              <li>npm run start</li>
-              <li>adres strony -  http://localhost:8080/</li>
-              
-            </ol>
-            
-            </li>
-            <li>SRC to źródło naszej strony, na którym pracujemy - względem niego podajemy ścieżki</li>
-            <li>skrypty w package.json 
-            
-            <ul>
-              <li>"start": "webpack-dev-server --config webpack.dev.js --mode development"</li>
-              <li>"build": "webpack --config webpack.prod.js --mode production"</li>
-              <li>"publish": "npm run build && gh-pages -d dist"</li>
-            </ul>
-            
-            
-            
+            <li>
+              Zawiera:
+
+              <ul>
+                <li>serwer lokalny z autoodświeżaniem</li>
+                <li>wsparcie dla scss i sourcemap</li>
+                <li>
+                  minifikacje - usuwanie zbędnych znaków z pliku w celu
+                  zmniejszenia objętości
+                </li>
+                <li>
+                  babel - pozwala na korzystanie z najnowszych funkcji języka JS
+                  (definiowane przez ECMA_Script)
+                </li>
+                <li>publikację na github pages</li>
+              </ul>
             </li>
 
-            <li>Scieżki zawsze podajemy względem naszego pliku źródłowego (oprócz ścieżek z sekcji head)</li>
+            <li>
+              Dzięki niemu będziemy odchodzili od używania wtyczek, tak aby
+              działało tak samo bez względu na konfigurację środowiska
+            </li>
+            <li>
+              Procedura uruchomienia StarterKit
+              <ol>
+                <li>
+                  Założenie nowego
+                  <a
+                    href="https://github.com/maciejkorsan/wtf-webpack-starter/generate"
+                  >
+                    projektu
+                  </a>
+                </li>
+                <li>
+                  git clone https://github.com/andrzej-adamczyk/webpack-test.git
+                </li>
+                <li>npm install</li>
+                <li>npm run start</li>
+                <li>adres strony - http://localhost:8080/</li>
+              </ol>
+            </li>
+            <li>
+              SRC to źródło naszej strony, na którym pracujemy - względem niego
+              podajemy ścieżki
+            </li>
+            <li>
+              skrypty w package.json
+
+              <ul>
+                <li>
+                  "start": "webpack-dev-server --config webpack.dev.js --mode
+                  development"
+                </li>
+                <li>
+                  "build": "webpack --config webpack.prod.js --mode production"
+                </li>
+                <li>"publish": "npm run build && gh-pages -d dist"</li>
+              </ul>
+            </li>
+
+            <li>
+              Scieżki zawsze podajemy względem naszego pliku źródłowego (oprócz
+              ścieżek z sekcji head)
+            </li>
           </ul>
         </article>
 
-
- <article class="lesson">
+        <article class="lesson">
           <h3>WTF Webpack StarterKit – dodawanie nowych plików, sourcemapy</h3>
 
-      
-           <p>Kroki konfiguracyjne</p>
-            
-  <ol>
-  <li>nawigacja do katalogu webpack-test</li>
-    <li>npm run start</li>
-    <li>dodanie nowej strony andrzej.html w /pages</li>
-    <li>otwarcie pliku webpack.common.js i stworzenie nowego wpisu <strong>new HtmlWebpackPlugin</strong></li>
-    <li>npm run start</li>
-    <li><a href ="http://localhost:8080/andrzej.html"> Link do nowej strony </a></li>
-    <li>definiowanie pliku ze stylami w index.js - import '../scss/main.scss';</li>
-    <li>dodanie paczki css z npm w main.scss - @import "~nazwa_paczki.css";</li>
+          <p>Kroki konfiguracyjne</p>
 
-    <li>source map - mapa po naszym kodzie (nie wrzucamy jej na produkcję)</li>
-  </ol>
+          <ol>
+            <li>nawigacja do katalogu webpack-test</li>
+            <li>npm run start</li>
+            <li>dodanie nowej strony andrzej.html w /pages</li>
+            <li>
+              otwarcie pliku webpack.common.js i stworzenie nowego wpisu
+              <strong>new HtmlWebpackPlugin</strong>
+            </li>
+            <li>npm run start</li>
+            <li>
+              <a href="http://localhost:8080/andrzej.html">
+                Link do nowej strony
+              </a>
+            </li>
+            <li>
+              definiowanie pliku ze stylami w index.js - import
+              '../scss/main.scss';
+            </li>
+            <li>
+              dodanie paczki css z npm w main.scss - @import
+              "~nazwa_paczki.css";
+            </li>
 
-            
-            
-            
-            
-       
-
-        
+            <li>
+              source map - mapa po naszym kodzie (nie wrzucamy jej na produkcję)
+            </li>
+          </ol>
         </article>
 
-
- <article class="lesson">
+        <article class="lesson">
           <h3>WTF Webpack StarterKit – budowanie projektu i publikacja</h3>
 
+          <ol>
+            <li>npm run build</li>
+
+            <li>
+              katalog DIST jest wynikiem naszej pracy, jego zawartość
+              publikujemy na serwerze - tego katalogu nie commitujemy - jest
+              dodany do .gitignore
+            </li>
+            <li>
+              katalog PUBLIC - pliki gotowe do wrzucenia bez transformacji
+              poprzez webpack (np. robots.txt, favicon.png)
+            </li>
+            <li>
+              Transformacje:
+
+              <ol>
+                <li>src/pages/plik.html -> dist/plik.html</li>
+                <li>src/scss/main.scss -> dist/index.[hash].css</li>
+                <li>src/assets/img/plik.png -> dist/img/plik.[hash].png</li>
+              </ol>
+            </li>
+
+            <li>NIE EDYTUJEMY ZAWARTOŚCI KATALOGU DIST</li>
+            <li>
+              npm run publish - uruchamia proces buildowania i publishowania
+              strony na nowym branchu gh-pages
+            </li>
+            <li>
+              <a href="https://andrzej-adamczyk.github.io/webpack-test/"
+                >moja strona na github pages
+              </a>
+            </li>
+            <li>
+              webpack na bieżąco monitoruje strone i zwraca informacje o błędach
+            </li>
+          </ol>
+        </article>
+
+        <article class="lesson">
+          <h3>CSS: Zmienne</h3>
+
           <ul>
             <li></li>
 
@@ -3459,8 +3562,7 @@ color:blue;
           </ul>
         </article>
 
-
- <article class="lesson">
+        <article class="lesson">
           <h3>Nowe rzeczy, których się nauczyłem:</h3>
 
           <ul>
@@ -3469,27 +3571,6 @@ color:blue;
             <li></li>
           </ul>
         </article>
-
-
- <article class="lesson">
-          <h3>Nowe rzeczy, których się nauczyłem:</h3>
-
-          <ul>
-            <li></li>
-
-            <li></li>
-          </ul>
-        </article>
-
-
-
-
-
-
-
-
-
-
 
         <article class="achievements">
           <h3>Achievements</h3>
