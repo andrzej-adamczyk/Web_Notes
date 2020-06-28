@@ -3342,29 +3342,85 @@ color:blue;
                         <li>npx webpack</li>
 <li>stworzenie katalogu src z plikiem index.js w folderze webpack_demo</li>
 <li>plik main.js w katalogu dist jest czytany przez przeglądarkę</li>
-<li></li>
-<li></li>
-<li></li>
+<li>wpisanie <strong>import moment from "moment"; </strong> w index. js</li>
+<li>npx webpack</li>
+<li> znalezienie funkcji w <a href="https://momentjs.com/"> dokumentacji moment.js</a></li>
+<li>wpisanie <strong>console.log(moment().format("MMMM Do YYYY, h:mm:ss a")); </strong> w index.js
+</li>
+
+ </ol>  
+</li>
+
+<li>loader - pozwala na operacje na plikach innych niż JS </li>
 
 
- </ol>                       
+
+
+ <li>plugin - pozwala na wykonywanie różnych operacji</li>        
+
+ <li> mode - development/production
+ <ul>
+   <li>webpack --mode development - (brak ostrzeżeń, plik main.js zawiera dodatkowe informacje, które pozwalają na łatwiejsze pisanie kodu)</li>
+   <li>webpack --mode production - (wyświetlane są ostrzeżenia związane np. z wielkością plików)</li>
+ </ul>
+ 
+  </li>  
+
+  <li>możliwości webpacka zwiększamy za pomocą paczek z NPM</li>           
           </ul>
         </article>
 
 
  <article class="lesson">
-          <h3>Nowe rzeczy, których się nauczyłem:</h3>
+          <h3>WTF Webpack StarterKit – pierwsze uruchomienie</h3>
 
           <ul>
-            <li></li>
+            <li>Jest to szablon, którego możemy użyć do tworzenia swoich projektów</li>
 
-            <li></li>
+            <li> Zawiera:
+            
+            <ul>
+              <li>serwer lokalny z autoodświeżaniem</li>
+              <li>wsparcie dla scss i sourcemap</li>
+              <li>minifikacje - usuwanie zbędnych znaków z pliku w celu zmniejszenia objętości</li>
+              <li>babel - pozwala na korzystanie z najnowszych funkcji języka JS (definiowane przez ECMA_Script)</li>
+              <li>publikację na github pages</li>
+            </ul>
+            
+            </li>
+
+            <li>Dzięki niemu będziemy odchodzili od używania wtyczek, tak aby działało tak samo bez względu na konfigurację środowiska</li>
+            <li> Procedura uruchomienia StarterKit
+            <ol>
+              <li>Założenie nowego <a href="https://github.com/maciejkorsan/wtf-webpack-starter/generate"> projektu </a></li>
+              <li>git clone https://github.com/andrzej-adamczyk/webpack-test.git</li>
+              <li>npm install</li>
+              <li>npm run start</li>
+              <li>adres strony -  http://localhost:8080/</li>
+              
+            </ol>
+            
+            </li>
+            <li>SRC to źródło naszej strony, na którym pracujemy - względem niego podajemy ścieżki</li>
+            <li>skrypty w package.json 
+            
+            <ul>
+              <li>"start": "webpack-dev-server --config webpack.dev.js --mode development"</li>
+              <li>"build": "webpack --config webpack.prod.js --mode production"</li>
+              <li>"publish": "npm run build && gh-pages -d dist"</li>
+            </ul>
+            
+            
+            
+            </li>
+
+            <li>Scieżki zawsze podajemy względem naszego pliku źródłowego (oprócz ścieżek z sekcji head)</li>
           </ul>
         </article>
 
 
  <article class="lesson">
-          <h3>Nowe rzeczy, których się nauczyłem:</h3>
+          <h3>WTF Webpack StarterKit – dodawanie nowych plików, sourcemapy</h3>
 
           <ul>
             <li></li>
