@@ -3296,6 +3296,7 @@ color:blue;
         
           </ul>
           
+          </article>
 
            <article class="lesson">
           <h3>WTF: Webpack</h3>
@@ -3338,7 +3339,7 @@ color:blue;
  
 
 
- <li><a href="https://webpack.js.org/guides/getting-started/">Webpack</a></li></li>
+ <li><a href="https://webpack.js.org/guides/getting-started/">Webpack</a></li>
                         <li>npx webpack</li>
 <li>stworzenie katalogu src z plikiem index.js w folderze webpack_demo</li>
 <li>plik main.js w katalogu dist jest czytany przez przeglądarkę</li>
@@ -3422,16 +3423,34 @@ color:blue;
  <article class="lesson">
           <h3>WTF Webpack StarterKit – dodawanie nowych plików, sourcemapy</h3>
 
-          <ul>
-            <li></li>
+      
+           <p>Kroki konfiguracyjne</p>
+            
+  <ol>
+  <li>nawigacja do katalogu webpack-test</li>
+    <li>npm run start</li>
+    <li>dodanie nowej strony andrzej.html w /pages</li>
+    <li>otwarcie pliku webpack.common.js i stworzenie nowego wpisu <strong>new HtmlWebpackPlugin</strong></li>
+    <li>npm run start</li>
+    <li><a href ="http://localhost:8080/andrzej.html"> Link do nowej strony </a></li>
+    <li>definiowanie pliku ze stylami w index.js - import '../scss/main.scss';</li>
+    <li>dodanie paczki css z npm w main.scss - @import "~nazwa_paczki.css";</li>
 
-            <li></li>
-          </ul>
+    <li>source map - mapa po naszym kodzie (nie wrzucamy jej na produkcję)</li>
+  </ol>
+
+            
+            
+            
+            
+       
+
+        
         </article>
 
 
  <article class="lesson">
-          <h3>Nowe rzeczy, których się nauczyłem:</h3>
+          <h3>WTF Webpack StarterKit – budowanie projektu i publikacja</h3>
 
           <ul>
             <li></li>
