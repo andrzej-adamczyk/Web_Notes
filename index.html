@@ -3553,35 +3553,101 @@ color:blue;
         </article>
 
         <article class="lesson">
-          <h3>CSS: Zmienne</h3>
+          <h3 class="cssCustomProperties">CSS: Zmienne</h3>
 
           <ul>
-            <li></li>
+            <li>
+              właściwa nazwa to - CSS Custom Properties (żyją w przeglądarce)
+            </li>
 
-            <li></li>
+            <li>pseudoselektor :root</li>
+
+            <li>w :root, wartość definiujemy dowolną wartość możliwa w CSS</li>
+            <li>var(--zmienna) - pobranie wartości ze zmiennej</li>
+            <li>
+              CSS Custom Properties mogą być użyte przez JS do zmiany własności
+            </li>
+            <li>
+              document.documentElement.style.setProperty('--zmienna', 'wartość')
+            </li>
+
+            <li>używane do zmiany stylu strony - np. dark mode</li>
           </ul>
         </article>
 
-        <article class="lesson">
-          <h3>Nowe rzeczy, których się nauczyłem:</h3>
+        <article class="homework">
+          <h3>Tydzień VIII Prace domowe</h3>
 
           <ul>
-            <li></li>
+            <li>Baw się dobrze</li>
+            <li>Dodaj taski do trello</li>
 
-            <li></li>
+            <li>
+              Utwórz z
+              <a
+                href="https://github.com/maciejkorsan/wtf-webpack-starter/generate"
+              >
+                szablonu
+              </a>
+              nowe repozytorium i sklonuj do siebie na dysk
+            </li>
+
+            <li>Przenieś istniejące strony html do src/pages</li>
+            <li>
+              Zawartość stylów ze starej strony wklej do src/scss/main.scss
+            </li>
+            <li>
+              Zawartość skryptów ze starej strony wklej do src/js/index.js
+            </li>
+            <li>
+              Dodaj bibliotekę moment, zaimportuj ją i wykorzystaj gdzieś na
+              stronie np. moment().startOf('day').fromNow();
+            </li>
+            <li>Opublikuj stronę za pomocą skryptu deploy</li>
+            <li>
+              Zrób przycisk zmieniający tryb strony
+              <ol>
+                <li>
+                  Zdefiniuj custom properties w CSS na kolor tła (jasny) oraz
+                  tekstu (ciemny) (np. --background-color, --text-color) i dodaj
+                  wartości tych zmiennych np. do body
+                </li>
+                <li>
+                  W kodzie JS utwórz zmienną let isDark i powiąż ją z wartością
+                  false
+                </li>
+                <li>
+                  Po kliknięciu na przycisk sprawdź czy isDark wskazuje na true:
+
+                  <ul>
+                    <li>
+                      jeśli tak - zmień wartość zmiennych CSS na jasne i
+                      wskazanie isDark na false (byliśmy w trybie ciemnym -
+                      włączamy tryb jasny)
+                    </li>
+                    <li>
+                      jeśli nie (w innym przypadku) - zmień wartość zmiennych
+                      CSS na ciemne i wskazanie isDark na true
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Gratulacje - masz prostą implementację przełącznika dark mode
+                  :)
+                </li>
+              </ol>
+            </li>
           </ul>
         </article>
 
         <article class="achievements">
           <h3>Achievements</h3>
 
-          <ul>
+          <ol>
             <li></li>
 
             <li></li>
-
-            <li></li>
-          </ul>
+          </ol>
         </article>
       </section>
 

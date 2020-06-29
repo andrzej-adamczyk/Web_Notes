@@ -336,6 +336,8 @@ buttonToggleClass.addEventListener("click", () => {
   console.log(heading.classList.contains("JS--class-hamburger__toggle"));
 });
 
+document.documentElement.style.setProperty("--gay", "yellow");
+
 //hamburger na stronie index.html
 
 const hamburger = document.querySelector(".hamburger--js");
